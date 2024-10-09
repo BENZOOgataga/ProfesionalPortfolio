@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    
+    <!-- Feuille de Style Principale -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour les Icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS pour les Animations au Scroll (Optionnel) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#accueil">Mon Portfolio</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#bts-sio">BTS SIO</a></li>
+                <li><a href="#e4">Épreuve E4</a></li>
+                <li><a href="#e5">Épreuve E5</a></li>
+                <li><a href="#veille">Veille Technologique</a></li>
+                <li><a href="#entreprise">Entreprise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Menu Hamburger (Visible sur Mobile) -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" data-aos="fade-up">
+        <div class="container">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Je suis Louis Morice, étudiant en BTS Services Informatiques aux Organisations. Découvrez mes projets et réalisations.</p>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" data-aos="fade-up">
+        <div class="container">
+            <h2>À propos</h2>
+            <p>Passionné par l'informatique et les réseaux, j'ai acquis certaines compétences en programmation, notamment en Python et gestion de projets. Mon objectif est de contribuer efficacement au sein d'une équipe dynamique et innovante.</p>
+        </div>
+    </section>
+
+    <!-- Section BTS SIO -->
+    <section id="bts-sio" data-aos="fade-up">
+        <div class="container">
+            <h2>BTS Services Informatiques aux Organisations (SIO)</h2>
+            <p>Le BTS SIO offre une formation complète en développement et en administration de systèmes et réseaux. J'ai choisi cette filière pour approfondir mes compétences techniques et préparer mon avenir professionnel dans le domaine de l'informatique.</p>
+        </div>
+    </section>
+
+    <!-- Section Épreuve E4 -->
+    <section id="e4" data-aos="fade-up">
+        <div class="container">
+            <h2>Épreuve E4</h2>
+            <p>L'épreuve E4 consiste ...</p>
+        </div>
+    </section>
+
+    <!-- Section Épreuve E5 -->
+    <section id="e5" data-aos="fade-up">
+        <div class="container">
+            <h2>Épreuve E5</h2>
+            <p>L'épreuve E5 porte sur ...</p>
+        </div>
+    </section>
+
+    <!-- Section Veille Technologique -->
+    <section id="veille" data-aos="fade-up">
+        <div class="container">
+            <h2>Veille Technologique</h2>
+            <p>Je m'intéresse constamment aux nouvelles technologies et aux tendances du secteur informatique. Mes activités de veille incluent la lecture d'articles spécialisés, la participation à des webinaires et l'expérimentation de nouveaux outils et frameworks.</p>
+        </div>
+    </section>
+
+    <!-- Section Entreprise -->
+    <section id="entreprise" data-aos="fade-up">
+        <div class="container">
+            <h2>Entreprise</h2>
+            <p>Au cours de mon cursus, j'ai effectué plusieurs stages en entreprise où j'ai pu appliquer mes connaissances théoriques dans des projets réels. Ces expériences m'ont permis de développer mon sens de l'organisation, ma capacité d'adaptation et mon esprit d'équipe.</p>
+        </div>
+    </section>
+
+    <!-- Script JavaScript pour le Formulaire de Contact -->
+    <script src="script.js"></script>
+
+    <!-- Section Contact -->
+    <section id="contact" data-aos="fade-up">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form" action="https://formspree.io/f/xqakzjdo" method="POST">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+            <div id="form-message"></div>
+        </div>
+    </section>
+
+
+    <!-- Bouton de Retour en Haut -->
+    <div id="back-to-top" title="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Pied de Page -->
+    <footer>
+        <div class="container">
+            <p>&copy; Portfolio de Louis Morice.</p>
+            <div class="social">
+                <a href="https://linkedin.com/in/votreprofil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/votreprofil" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/votreprofil" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script>
+        // Menu Hamburger
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Fermer le menu lors du clic sur un lien (optionnel)
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Bouton de Retour en Haut et Effet de Scrolling pour la Navbar
+        window.addEventListener('scroll', () => {
+            const backToTop = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+
+            // Ajout de la classe 'scrolled' à la navbar
+            const nav = document.querySelector('nav');
+            if (window.pageYOffset > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            // Mise à jour des liens actifs dans la navbar
+            const sections = document.querySelectorAll('section');
+            const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+            sections.forEach(section => {
+                if (
+                    scrollPos >= section.offsetTop - 60 &&
+                    scrollPos < section.offsetTop + section.offsetHeight - 60
+                ) {
+                    const id = section.getAttribute('id');
+                    const currentActive = document.querySelector('.navbar a.active');
+                    if (currentActive) {
+                        currentActive.classList.remove('active');
+                    }
+                    const newActive = document.querySelector(`.navbar a[href="#${id}"]`);
+                    if (newActive) {
+                        newActive.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        // Faire défiler vers le haut lorsqu'on clique sur le bouton
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <!-- AOS JS pour les Animations au Scroll (Optionnel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

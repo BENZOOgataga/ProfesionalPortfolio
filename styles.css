@@ -1,0 +1,395 @@
+/* =========================================
+   Réinitialisation des styles
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Variables CSS pour une gestion facile des couleurs
+========================================= */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #18bc9c;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --accent-color: #e74c3c;
+    --font-family: 'Roboto', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+/* =========================================
+   Styles Globaux
+========================================= */
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* =========================================
+   Barre de Navigation
+========================================= */
+nav {
+    background-color: var(--primary-color);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color var(--transition-speed);
+}
+
+nav.scrolled {
+    background-color: rgba(44, 62, 80, 0.9);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin-left: 25px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* =========================================
+   Menu Hamburger (Mobile)
+========================================= */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    transition: all var(--transition-speed);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =========================================
+   Sections
+========================================= */
+section {
+    padding: 100px 0 60px 0; /* Padding-top ajusté pour compenser la navbar fixe */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-color);
+    transition: background-color var(--transition-speed);
+}
+
+section:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+section h1,
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--dark-color);
+    line-height: 1.8;
+}
+
+/* =========================================
+   Formulaire de Contact
+========================================= */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: box-shadow var(--transition-speed);
+}
+
+form:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(24, 188, 156, 0.5);
+    outline: none;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   Bouton de Retour en Haut
+========================================= */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* =========================================
+   Pied de Page
+========================================= */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer .social {
+    margin-top: 15px;
+}
+
+footer .social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color var(--transition-speed);
+}
+
+footer .social a:hover {
+    color: var(--secondary-color);
+}
+
+/* =========================================
+   Responsive Design
+========================================= */
+@media (max-width: 992px) {
+    .navbar li {
+        margin-left: 20px;
+    }
+
+    nav .logo a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-color);
+        transition: left var(--transition-speed);
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    section {
+        padding: 80px 20px 40px 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo a {
+        font-size: 1.3em;
+    }
+
+    section h1,
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    footer .social a {
+        font-size: 1em;
+    }
+}
+
+/* =========================================
+   Animations et Effets Supplémentaires
+========================================= */
+
+/* Animation de Fade-In pour les Sections */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+}
+
+section:nth-of-type(even) {
+    animation-delay: 0.3s;
+}
+
+section:nth-of-type(odd) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   Scrollspy Active Link
+========================================= */
+.navbar a.active {
+    background-color: var(--secondary-color);
+}
+
+/* =========================================
+   Styles pour les Icônes dans le Pied de Page
+========================================= */
+footer .social a i {
+    font-size: 1.5em;
+}
+
+/* Messages de Formulaire */
+#form-message {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#form-message .success {
+    color: green;
+    font-weight: bold;
+}
+
+#form-message .error {
+    color: red;
+    font-weight: bold;
+}
