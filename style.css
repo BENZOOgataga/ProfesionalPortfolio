@@ -1,0 +1,166 @@
+body {
+  font-family: "Saira Condensed", sans-serif;
+  line-height: 1.6;
+  color: #bd5d38;
+  background-color: #EAE4DD;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #bd5d38 !important;
+}
+
+.navbar-brand, .nav-link {
+  color: #EAE4DD !important;
+  transition: color 0.3s ease;
+  font-size: 25px !important;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.nav-link:hover {
+  color: #343a40 !important;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+header {
+  background-color: #EAE4DD !important;
+  color: #bd5d38;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 55px;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+h5 { 
+  font-size: 22px;
+}
+
+a {
+  font-size: 20px;
+  color: #343a40;
+}
+
+.mb-5 li{
+  color: #343a40;
+  font-size: 22px;
+}
+
+p {
+  color: #343a40;
+  font-size: 22px;
+}
+
+.card {
+  border-color: #E1D7C6;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary, .btn-secondary{
+  background-color: #343a40;
+  border-color: #495057;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
+}
+
+.bg-primary {
+  background-color: #EAE4DD !important;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #bd5d38;
+  border-color: #bd5d38;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact p {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #bd5d38;
+}
+
+a {
+  color: black;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 35px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #bd5d38;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.5s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 0.5s ease-out;
+}
