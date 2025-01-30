@@ -52,97 +52,35 @@
         </p>
     </section>
 
-    <!-- Tableau de compétences -->
     <section class="mb-5">
-        <h2>Tableau de compétences</h2>
+        <h2 class="mb-4">Projets académiques</h2>
         <p>
-            Le tableau ci-dessous résume les compétences développées dans le cadre de mes projets et expériences techniques.
-            Vous pouvez également télécharger la version Excel pour une exploration détaillée.
-        </p>
-        <a href="fichiers/e5.xlsx" class="btn btn-primary" download>Télécharger le fichier Excel</a>
-    </section>
-
-    <section class="mb-5">
-        <h2 class="text-center mb-4">Projets académiques</h2>
-        <p class="text-center">
-            Dans le cadre de ma formation, plusieurs projets ont été réalisés. Chacun d'eux a permis de développer des compétences techniques et professionnelles grâce à des défis concrets.
+            Téléchargez directement les fichiers de mes projets académiques à l'aide des boutons ci-dessous.
         </p>
 
-        <!-- Projet 1 : Déploiement de serveurs -->
-        <div class="card mb-4">
-            <div class="card-header bg-light">
-                <h3 class="card-title text-dark">Déploiement de serveurs</h3>
-            </div>
-            <div class="card-body text-dark">
-                <h4>Objectifs :</h4>
-                <p>
-                    Installer et configurer un serveur d’entreprise capable de gérer des utilisateurs et leurs droits, tout en assurant le partage sécurisé des ressources via Active Directory et DNS.
-                </p>
-
-                <h4>Déroulement :</h4>
-                <p>
-                    Le projet a débuté par l’analyse des besoins d’une entreprise simulée. Ensuite, j’ai configuré un serveur Windows avec Active Directory, créé des groupes d’utilisateurs, géré leurs permissions, mis en place un serveur DNS et configuré des partages sécurisés avec des scripts de démarrage automatique.
-                </p>
-
-                <h4>Résultats :</h4>
-                <p>
-                    Un serveur fonctionnel capable de gérer 50 utilisateurs simultanément a été mis en place. Les utilisateurs ont pu accéder aux ressources partagées en toute sécurité tout en bénéficiant d’un accès rapide et fiable aux services réseau.
-                </p>
-            </div>
+        <!-- Boutons de téléchargement pour chaque projet -->
+        <div>
+            <a href="fichiers/deploiement_serveurs.zip" class="btn btn-primary mb-2" download>
+                Télécharger le projet "Déploiement de serveurs"
+            </a>
+        </div>
+        <div>
+            <a href="fichiers/virtualisation.zip" class="btn btn-primary mb-2" download>
+                Télécharger le projet "Virtualisation"
+            </a>
+        </div>
+        <div>
+            <a href="fichiers/securisation_reseau.zip" class="btn btn-primary mb-2" download>
+                Télécharger le projet "Sécurisation réseau"
+            </a>
         </div>
 
-        <!-- Projet 2 : Virtualisation -->
-        <div class="card mb-4">
-            <div class="card-header bg-light">
-                <h3 class="card-title text-dark">Virtualisation</h3>
-            </div>
-            <div class="card-body text-dark">
-                <h4>Objectifs :</h4>
-                <p>
-                    Créer un environnement virtualisé pour tester différentes configurations réseau, permettant une isolation entre les machines et une simulation réaliste des infrastructures IT modernes.
-                </p>
-
-                <h4>Déroulement :</h4>
-                <p>
-                    À partir de VMware Workstation, j'ai créé plusieurs VM (machines virtuelles) représentant des serveurs et des postes clients. J’ai configuré des scénarios tels que le routage, le basculement entre services, et la gestion réseau à l’aide de VLANs.
-                </p>
-
-                <h4>Résultats :</h4>
-                <p>
-                    Un environnement virtuel robuste capable de simuler des solutions multitier (base de données, serveur web) a été mis en place. Cela a permis de tester des scénarios complexes, comme la reprise après sinistre, sans l’investissement dans du matériel coûteux.
-                </p>
-            </div>
-        </div>
-
-        <!-- Projet 3 : Sécurisation réseau -->
-        <div class="card mb-4">
-            <div class="card-header bg-light">
-                <h3 class="card-title text-dark">Sécurisation réseau</h3>
-            </div>
-            <div class="card-body text-dark">
-                <h4>Objectifs :</h4>
-                <p>
-                    Renforcer la sécurité d’un réseau local à l’aide de VLANs pour séparer les flux réseau, tout en utilisant un pare-feu pour contrôler les accès externes. Étudier les performances réseau pour en diagnostiquer les faiblesses.
-                </p>
-
-                <h4>Déroulement :</h4>
-                <p>
-                    Un commutateur managé a été configuré pour définir plusieurs VLANs destinés au personnel administratif, au support technique et aux invités. J’ai mis en place un pare-feu matériel (PfSense) pour filtrer les connexions et surveiller les flux réseau à l’aide de Wireshark.
-                </p>
-
-                <h4>Résultats :</h4>
-                <p>
-                    Le réseau segmenté a permis de limiter les menaces latérales (ex. : attaques internes). Les performances réseau ont été mesurées et optimisées, réduisant la latence de 20 % sur les applications cruciales du réseau administratif.
-                </p>
-            </div>
-        </div>
-
-        <!-- Option pour télécharger tous les projets académiques -->
-        <div class="text-center">
-            <p>
-                Vous pouvez télécharger un résumé complet de ces projets académiques au format compressé :
-            </p>
-            <a href="fichiers/projets_academiques.zip" class="btn btn-secondary" download>Télécharger les projets académiques (ZIP)</a>
+        <!-- Option pour télécharger tous les projets -->
+        <div class="mt-4">
+            <p>Ou téléchargez tous les projets académiques dans une archive compressée :</p>
+            <a href="fichiers/projets_academiques.zip" class="btn btn-secondary" download>
+                Télécharger tous les projets académiques (ZIP)
+            </a>
         </div>
     </section>
 
@@ -163,6 +101,8 @@
             </li>
         </ul>
     </section>
+
+    <a href="projets_competences.html" class="btn btn-primary">&laquo; Retour à l'accueil</a>
 </main>
 
 <footer>
