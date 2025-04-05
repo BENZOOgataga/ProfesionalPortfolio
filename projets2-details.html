@@ -138,29 +138,35 @@
                         Ensemble de scripts Python permettant de démarrer, arrêter, mettre à jour et sauvegarder les serveurs
                         selon un calendrier prédéfini ou en réponse à des événements spécifiques.
                     </p>
-                    <pre><code class="language-python">
-# Exemple simplifié de script d'automatisation
-import subprocess
-import logging
-import schedule
-import time
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>exemple.py</span>
+                            <div class="code-actions">
+                                <i class="fas fa-copy"></i>
+                            </div>
+                        </div>
+                        <pre class="code-block"><code><span class="comment"># Exemple simplifié de script d'automatisation</span>
+<span class="keyword">import</span> subprocess
+<span class="keyword">import</span> logging
+<span class="keyword">import</span> schedule
+<span class="keyword">import</span> time
 
-def backup_server(server_id):
-    logging.info(f"Starting backup for server {server_id}")
-    try:
-        subprocess.run(["./backup.sh", server_id], check=True)
-        logging.info(f"Backup completed for server {server_id}")
-    except Exception as e:
-        logging.error(f"Backup failed: {e}")
+<span class="keyword">def</span> <span class="function">backup_server</span>(server_id):
+    logging.info(<span class="string">f"Starting backup for server {server_id}"</span>)
+    <span class="keyword">try</span>:
+        subprocess.run([<span class="string">"./backup.sh"</span>, server_id], check=<span class="keyword">True</span>)
+        logging.info(<span class="string">f"Backup completed for server {server_id}"</span>)
+    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:
+        logging.error(<span class="string">f"Backup failed: {e}"</span>)
 
-# Planification des sauvegardes
-schedule.every().day.at("03:00").do(backup_server, "minecraft-1")
-schedule.every().day.at("04:00").do(backup_server, "factorio-1")
+<span class="comment"># Planification des sauvegardes</span>
+schedule.every().day.at(<span class="string">"03:00"</span>).do(backup_server, <span class="string">"minecraft-1"</span>)
+schedule.every().day.at(<span class="string">"04:00"</span>).do(backup_server, <span class="string">"factorio-1"</span>)
 
-while True:
+<span class="keyword">while</span> <span class="keyword">True</span>:
     schedule.run_pending()
-    time.sleep(60)
-                    </code></pre>
+    time.sleep(<span class="number">60</span>)</code></pre>
+                    </div>
                 </div>
 
                 <div class="mb-4">
@@ -287,6 +293,65 @@ while True:
     </div>
 </footer>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Find all code copy buttons
+        const copyButtons = document.querySelectorAll('.code-actions i.fa-copy');
+
+        // Add click event listener to each button
+        copyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Find the associated code block
+                const codeBlock = this.closest('.code-container').querySelector('.code-block');
+
+                // Get the text content (without HTML tags)
+                let codeText = '';
+
+                // Since we have spans for syntax highlighting, we need to get the raw text
+                const codeElements = codeBlock.querySelectorAll('code');
+                codeElements.forEach(element => {
+                    // Get text content by recursively extracting text from all child nodes
+                    const extractTextContent = (node) => {
+                        let result = '';
+                        if (node.nodeType === Node.TEXT_NODE) {
+                            result += node.textContent;
+                        } else if (node.nodeType === Node.ELEMENT_NODE) {
+                            for (const child of node.childNodes) {
+                                result += extractTextContent(child);
+                            }
+                        }
+                        return result;
+                    };
+
+                    codeText = extractTextContent(element);
+                });
+
+                // Create a temporary textarea to copy from
+                const textarea = document.createElement('textarea');
+                textarea.value = codeText;
+                document.body.appendChild(textarea);
+                textarea.select();
+
+                // Execute copy command
+                document.execCommand('copy');
+
+                // Remove the textarea
+                document.body.removeChild(textarea);
+
+                // Show feedback (change icon temporarily)
+                const originalIcon = this.className;
+                this.className = 'fas fa-check';
+                this.style.color = '#4CAF50';
+
+                // Restore original icon after a short delay
+                setTimeout(() => {
+                    this.className = originalIcon;
+                    this.style.color = '';
+                }, 1500);
+            });
+        });
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/modern.js"></script>
 </body>
