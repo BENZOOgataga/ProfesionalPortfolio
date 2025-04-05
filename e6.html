@@ -4,63 +4,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Épreuve E6 - En construction</title>
-
+    <title>Épreuve E6 | Louis Morice</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="fade-in">
-<nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand">Louis Morice</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">Louis Morice</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <!-- Separate buttons for Épreuve E5 and E6 -->
-                <li class="nav-item"><a class="nav-link" href="e5.html">Épreuve E5</a></li>
-                <li class="nav-item"><a class="nav-link" href="e6.html">Épreuve E6</a></li>
+                <li class="nav-item"><a class="nav-link" href="projets_competences.html">Projets & Compétences</a></li>
                 <li class="nav-item"><a class="nav-link" href="CV.html">CV</a></li>
-                <li class="nav-item"><a class="nav-link" href="projets_competences.html">Projets et Compétences</a></li>
-                <li class="nav-item"><a class="nav-link" href="veille.html">Veille informatique</a></li>
+                <li class="nav-item"><a class="nav-link" href="veille.html">Veille</a></li>
+                <li class="nav-item"><a class="nav-link" href="e5.html">E5</a></li>
+                <li class="nav-item"><a class="nav-link-active" href="#">E6</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<header class="bg-warning text-center py-5">
-    <h1 class="text-dark">Épreuve 5</h1>
-    <p class="text-dark">Page en construction, revenez bientôt !</p>
-</header>
-
-<main class="container text-center my-5">
-    <h2 class="mb-3 text-muted">À venir...</h2>
-    <p class="lead text-muted">Cette page est encore en cours de développement. N'hésitez pas à revenir prochainement pour découvrir ses contenus.</p>
-    <a href="index.html" class="btn btn-primary mt-3">Retour à l'accueil</a>
-</main>
-
-<footer>
-    <div class="footer-container">
-        <div class="contact">
-            <h5><i class="fas fa-envelope"></i> louis.morice.pro@gmail.com</h5>
-            <h5><i class="fas fa-phone"></i> +33 6 67 47 51 53</h5>
+<!-- Header -->
+<section style="padding-top: 120px; padding-bottom: 60px; background-color: var(--gray);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">BTS SIO</span>
+            <h2>Épreuve E6</h2>
         </div>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/louismorice/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/benzoogataga" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+    </div>
+</section>
+
+<!-- Section Introduction -->
+<section class="featured-projects" style="padding-top: 60px; padding-bottom: 40px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Présentation</span>
+            <h2>Présentation de l'épreuve E6</h2>
+            <p>
+                L'épreuve E6 "Parcours de professionnalisation" est une épreuve orale qui évalue la capacité du candidat
+                à analyser son parcours de formation et ses expériences professionnelles. Elle se compose d'une présentation
+                du parcours et d'un entretien avec le jury.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Parcours de professionnalisation -->
+<section class="featured-projects" style="padding-top: 40px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Parcours</span>
+            <h2>Mon parcours professionnel</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 project-card">
+                <div class="project-content">
+                    <h3>Formation</h3>
+                    <p>Mon parcours de formation en BTS SIO option SISR à EFREI et les compétences acquises.</p>
+                    <div class="tags">
+                        <span>BTS SIO</span>
+                        <span>SISR</span>
+                        <span>EFREI</span>
+                    </div>
+                    <a href="CV.html" class="project-link">Voir mon CV <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-6 project-card">
+                <div class="project-content">
+                    <h3>Expériences professionnelles</h3>
+                    <p>Mes stages et projets personnels qui ont contribué à mon développement professionnel.</p>
+                    <div class="tags">
+                        <span>Stage</span>
+                        <span>Projets personnels</span>
+                        <span>Compétences</span>
+                    </div>
+                    <a href="projets_competences.html" class="project-link">Voir mes projets <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Compétences développées -->
+<section class="skills" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Compétences</span>
+            <h2>Compétences développées</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <h3>Administration système</h3>
+                <p>Installation, configuration et maintenance de serveurs Linux et Windows.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>Réseaux</h3>
+                <p>Configuration et sécurisation d'infrastructures réseau, VLAN, routage.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersécurité</h3>
+                <p>Mise en place de solutions de sécurité et bonnes pratiques.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <h3>Développement</h3>
+                <p>Programmation en Python, scripting pour l'automatisation des tâches.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tableau de synthèse -->
+<section style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Synthèse</span>
+            <h2>Bilan de mon parcours</h2>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="bg-primary text-white">
+                <tr>
+                    <th>Période</th>
+                    <th>Expérience</th>
+                    <th>Compétences acquises</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2022-2024</td>
+                    <td>BTS SIO option SISR à EFREI</td>
+                    <td>Administration système, réseaux, virtualisation, cybersécurité</td>
+                </tr>
+                <tr>
+                    <td>Mars-Avril 2021</td>
+                    <td>Stage - Technicien informatique (SEMMARIS)</td>
+                    <td>Maintenance, support utilisateurs, déploiement de postes</td>
+                </tr>
+                <tr>
+                    <td>2020-Présent</td>
+                    <td>Projet personnel - Administration de serveurs</td>
+                    <td>Linux, Python, automatisation, administration système</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Section Documents -->
+<section style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Ressources</span>
+            <h2>Documents et ressources</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="skill-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Tableau de synthèse</h3>
+                    <p>Tableau récapitulatif des compétences acquises durant ma formation.</p>
+                    <a href="#" class="project-link" target="_blank">Télécharger <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-item">
+                    <i class="fas fa-file-powerpoint"></i>
+                    <h3>Présentation</h3>
+                    <p>Support de présentation utilisé pour l'épreuve E6.</p>
+                    <a href="#" class="project-link" target="_blank">Télécharger <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-item">
+                    <i class="fas fa-file-word"></i>
+                    <h3>Fiche Veille</h3>
+                    <p>Document sur ma veille technologique et ses apports.</p>
+                    <a href="#" class="project-link" target="_blank">Télécharger <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Perspectives -->
+<section style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Avenir</span>
+            <h2>Perspectives professionnelles</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h4>Poursuite d'études</h4>
+                        <p>Mon projet de poursuite d'études en alternance dans le domaine de l'administration système et réseaux ou de la cybersécurité.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h4>Objectifs professionnels</h4>
+                        <p>Mes objectifs à court et moyen terme concernant mon développement professionnel et les certifications visées.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bouton Retour -->
+<section class="pb-5">
+    <div class="container">
+        <a href="index.html" class="btn btn-primary"><i class="fas fa-arrow-left me-2"></i>Retour à l'accueil</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2025 Louis Morice. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="projets_competences.html">Projets & Compétences</a>
+                <a href="CV.html">CV</a>
+            </div>
+            <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/in/louismorice/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/benzoogataga" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/modern.js"></script>
 </body>
 
 </html>

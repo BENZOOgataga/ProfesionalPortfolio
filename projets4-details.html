@@ -4,87 +4,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Projet 4 : Sécurisation Réseau</title>
-
+    <title>Projet: Sécurisation Réseau | Louis Morice</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="fade-in">
-<nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand">Louis Morice</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">Louis Morice</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <!-- Separate buttons for Épreuve E5 and E6 -->
-                <li class="nav-item"><a class="nav-link" href="e5.html">Épreuve E5</a></li>
-                <li class="nav-item"><a class="nav-link" href="e6.html">Épreuve E6</a></li>
+                <li class="nav-item"><a class="nav-link-active" href="projets_competences.html">Projets & Compétences</a></li>
                 <li class="nav-item"><a class="nav-link" href="CV.html">CV</a></li>
-                <li class="nav-item"><a class="nav-link" href="projets_competences.html">Projets et Compétences</a></li>
-                <li class="nav-item"><a class="nav-link" href="veille.html">Veille informatique</a></li>
+                <li class="nav-item"><a class="nav-link" href="veille.html">Veille</a></li>
+                <li class="nav-item"><a class="nav-link" href="e5.html">E5</a></li>
+                <li class="nav-item"><a class="nav-link" href="e6.html">E6</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<header class="bg-primary text-center py-5 slide-in-left">
-    <h1>Sécurisation Réseau</h1>
-</header>
-
-<main class="container my-5">
-    <section class="slide-in-right">
-        <h2>Objectifs</h2>
-        <p>
-            Renforcer la sécurité d'un réseau informatique en implémentant des politiques adaptées pour limiter les accès non autorisés et sécuriser les échanges de données.
-            L'objectif principal est de protéger les informations sensibles et de se prémunir contre les cyberattaques.
-        </p>
-    </section>
-
-    <section class="slide-in-left">
-        <h2>Technologies et outils utilisés</h2>
-        <ul>
-            <li>Configuration de VLANs pour segmenter le réseau.</li>
-            <li>Implémentation de pare-feux avec des règles strictes d'accès.</li>
-            <li>Protocoles de sécurisation comme HTTPS et SSH.</li>
-            <li>Utilisation de Wireshark pour analyser les paquets réseau.</li>
-            <li>Configuration de monitoring avec des outils comme Nagios pour détecter les intrusions.</li>
-        </ul>
-    </section>
-
-    <section class="fade-in">
-        <h2>Résultats</h2>
-        <p>
-            Après l'implémentation, le réseau est divisé en plusieurs zones sécurisées par des VLANs, le trafic est contrôlé grâce aux pare-feux,
-            et les échanges critiques sont chiffrés. Les logs permettent désormais de détecter rapidement toute activité suspecte, offrant une solution robuste et durable.
-        </p>
-    </section>
-
-    <a href="projets_competences.html" class="btn btn-primary">&laquo; Retour à l'accueil</a>
-</main>
-
-<footer>
-    <div class="footer-container">
-        <div class="contact">
-            <h5><i class="fas fa-envelope"></i> louis.morice.pro@gmail.com</h5>
-            <h5><i class="fas fa-phone"></i> +33 6 67 47 51 53</h5>
+<!-- Header -->
+<section style="padding-top: 120px; padding-bottom: 60px; background-color: var(--gray);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Projet Académique</span>
+            <h2>Sécurisation Réseau</h2>
         </div>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/louismorice/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/benzoogataga" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+    </div>
+</section>
+
+<!-- Aperçu du projet -->
+<section class="featured-projects" style="padding-top: 60px; padding-bottom: 40px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <img src="assets/img/secure.png" alt="Sécurisation Réseau" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <span class="section-tag">Vue d'ensemble</span>
+                    <h2>Protection des infrastructures réseau</h2>
+                </div>
+                <p>
+                    Ce projet porte sur le renforcement de la sécurité d'un réseau informatique en implémentant
+                    des politiques adaptées pour limiter les accès non autorisés et sécuriser les échanges de données.
+                    L'objectif principal est de protéger les informations sensibles et de se prémunir contre les cyberattaques.
+                </p>
+                <div class="tags">
+                    <span>VLAN</span>
+                    <span>Pare-feu</span>
+                    <span>HTTPS/SSH</span>
+                    <span>Monitoring</span>
+                    <span>Wireshark</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Description détaillée -->
+<section style="padding-top: 40px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Détails</span>
+            <h2>Description du projet</h2>
+        </div>
+
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-4">
+                <h3 class="mb-4">Contexte et objectifs</h3>
+                <p>
+                    Dans un environnement où les cyberattaques sont de plus en plus sophistiquées, la sécurisation des réseaux
+                    informatiques est devenue une priorité absolue. Ce projet vise à implémenter une architecture réseau sécurisée
+                    qui protège les informations sensibles tout en maintenant la fonctionnalité et l'accessibilité nécessaires.
+                </p>
+                <p>
+                    Les principaux objectifs étaient :
+                </p>
+                <ul>
+                    <li>Segmenter le réseau en zones distinctes avec différents niveaux de sécurité</li>
+                    <li>Contrôler et filtrer le trafic entre les différentes zones du réseau</li>
+                    <li>Sécuriser les communications en implémentant des protocoles de chiffrement</li>
+                    <li>Mettre en place un système de monitoring pour détecter les activités suspectes</li>
+                    <li>Documenter les meilleures pratiques pour la maintenance continue du réseau sécurisé</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-4">
+                <h3 class="mb-4">Technologies utilisées</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Infrastructure réseau</h4>
+                        <ul>
+                            <li>Cisco IOS pour la configuration des commutateurs</li>
+                            <li>VLANs pour la segmentation du réseau</li>
+                            <li>ACLs (Access Control Lists) pour le filtrage du trafic</li>
+                            <li>VPN pour les accès distants sécurisés</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Sécurité et monitoring</h4>
+                        <ul>
+                            <li>Pare-feu Pfsense pour le contrôle du trafic</li>
+                            <li>Protocoles HTTPS et SSH pour les communications chiffrées</li>
+                            <li>Wireshark pour l'analyse du trafic réseau</li>
+                            <li>Nagios pour la surveillance et les alertes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+                <h3 class="mb-4">Principales fonctionnalités</h3>
+
+                <div class="mb-4">
+                    <h4>1. Segmentation du réseau</h4>
+                    <p>
+                        Implémentation de VLANs pour isoler les différents départements et services, limitant ainsi
+                        la propagation des menaces en cas de compromission d'un segment.
+                    </p>
+                </div>
+
+                <div class="mb-4">
+                    <h4>2. Contrôle d'accès</h4>
+                    <p>
+                        Mise en place de règles de filtrage strictes sur les pare-feux pour contrôler le trafic entrant
+                        et sortant, avec une approche de "moindre privilège" où seul le trafic explicitement autorisé est permis.
+                    </p>
+                </div>
+
+                <div class="mb-4">
+                    <h4>3. Communications sécurisées</h4>
+                    <p>
+                        Configuration des protocoles HTTPS pour les applications web et SSH pour l'administration à distance,
+                        assurant ainsi le chiffrement des données en transit.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>4. Système de monitoring</h4>
+                    <p>
+                        Déploiement de Nagios pour surveiller en temps réel l'état du réseau, avec des alertes configurées
+                        pour notifier les administrateurs en cas d'activité suspecte ou d'anomalie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Compétences acquises -->
+<section class="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Acquis</span>
+            <h2>Compétences développées</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>Configuration réseau avancée</h3>
+                <p>Mise en place de VLANs, ACLs et routage inter-VLAN.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Sécurité informatique</h3>
+                <p>Implémentation de politiques de sécurité et configuration de pare-feux.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Monitoring et analyse</h3>
+                <p>Utilisation d'outils de surveillance réseau et analyse de trafic.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-file-alt"></i>
+                <h3>Documentation technique</h3>
+                <p>Rédaction de documentations détaillées et procédures de sécurité.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Conclusion -->
+<section style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Bilan</span>
+            <h2>Résultats et conclusion</h2>
+        </div>
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+                <p>
+                    Après l'implémentation des mesures de sécurité, le réseau présente une architecture robuste avec plusieurs
+                    couches de protection qui travaillent ensemble pour créer un environnement sécurisé.
+                </p>
+                <p>
+                    Les principaux résultats obtenus sont :
+                </p>
+                <ul>
+                    <li>Isolation efficace des services critiques dans des VLANs dédiés</li>
+                    <li>Réduction significative des vulnérabilités potentielles grâce aux règles de pare-feu</li>
+                    <li>Sécurisation des communications administratives et des données sensibles</li>
+                    <li>Système de détection précoce d'incidents grâce au monitoring en temps réel</li>
+                </ul>
+                <p>
+                    Ce projet a permis de mettre en pratique des connaissances théoriques en sécurité réseau et
+                    d'acquérir une expérience concrète dans l'implémentation de solutions de protection. Les compétences
+                    développées sont directement applicables dans un environnement professionnel et constituent une base
+                    solide pour la spécialisation en cybersécurité.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Boutons de navigation -->
+<section class="pb-5">
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <a href="projets_competences.html" class="btn btn-outline">
+                <i class="fas fa-arrow-left me-2"></i>Retour aux projets
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2025 Louis Morice. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="projets_competences.html">Projets & Compétences</a>
+                <a href="CV.html">CV</a>
+            </div>
+            <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/in/louismorice/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/benzoogataga" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/modern.js"></script>
 </body>
-
 </html>
