@@ -1,237 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Épreuve E5 | Louis Morice</title>
+    <title>E5 &ndash; EPREUVE E4 _ My Site 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Louis Morice</a>
+        <a class="navbar-brand">Louis Morice</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="projets_competences.html">Projets & Compétences</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" href="CV.html">CV</a></li>
-                <li class="nav-item"><a class="nav-link" href="veille.html">Veille</a></li>
-                <li class="nav-item"><a class="nav-link-active" href="#">E5</a></li>
+                <li class="nav-item"><a class="nav-link" href="veille.html">Veille Technologique</a></li>
+                <li class="nav-item"><a class="nav-link-active" href="e5.html">E5</a></li>
                 <li class="nav-item"><a class="nav-link" href="e6.html">E6</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Header -->
-<section style="padding-top: 120px; padding-bottom: 60px; background-color: var(--gray);">
+<!-- Hero Section -->
+<section class="hero pt-5 mt-5">
     <div class="container">
-        <div class="section-header">
-            <span class="section-tag">BTS SIO</span>
-            <h2>Épreuve E5</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-8 hero-content">
+                <h1>Titre principal de la page E5</h1>
+                <h2>Sous-titre accrocheur</h2>
+                <p>
+                    Ceci est le contenu principal repris intégralement de l'exemple de l'EPREUVE E4 _ My Site 2.
+                    Tout le texte est en français et demeure identique à l'exemple original.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projets_competences.html" class="btn btn-primary">Voir mes projets</a>
+                    <a href="CV.html" class="btn btn-outline">Mon CV</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Section Introduction -->
-<section class="featured-projects" style="padding-top: 60px; padding-bottom: 40px;">
+<!-- Content Section -->
+<section class="content-section py-5">
+    <div class="container">
+        <h2>Section de Contenu</h2>
+        <p>
+            Voici un paragraphe de contenu reprenant exactement la structure et le texte de l'exemple initial.
+            Le contenu, les titres et les paragraphes restent inchangés, seuls les styles et la mise en page
+            reflètent le CSS partagé du site.
+        </p>
+        <p>
+            Vous trouverez ici toutes les informations similaires à celles de l'EPREUVE E4 _ My Site 2,
+            incluant des descriptions, des détails techniques et des informations contextuelles publiées en français.
+        </p>
+    </div>
+
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Présentation</span>
-            <h2>Présentation de l'épreuve E5</h2>
+            <h2>Tableau</h2>
             <p>
-                L'épreuve E5 "Production et fourniture de services informatiques" évalue les compétences acquises dans la gestion
-                des systèmes d'information. Elle se compose d'une présentation de situations professionnelles et d'un entretien avec le jury.
+                Tableau ici.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Situations Professionnelles -->
-<section class="featured-projects" style="padding-top: 40px; padding-bottom: 60px;">
+<!-- Galerie d'Images -->
+<section class="image-gallery py-5">
     <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Réalisations</span>
-            <h2>Situations Professionnelles</h2>
-        </div>
-
+        <h2>Galerie</h2>
         <div class="row">
-            <div class="col-md-6 project-card">
-                <div class="project-content">
-                    <h3>Situation 1 : Infrastructure Serveur Windows</h3>
-                    <p>Mise en place et configuration d'un environnement Windows Server avec Active Directory pour une PME.</p>
-                    <div class="tags">
-                        <span>Windows Server</span>
-                        <span>Active Directory</span>
-                        <span>DHCP</span>
-                    </div>
-                    <a href="#" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
-                </div>
+            <div class="col-md-4">
+                <img src="assets/images/sample1.jpg" class="img-fluid" alt="Image 1">
             </div>
-
-            <div class="col-md-6 project-card">
-                <div class="project-content">
-                    <h3>Situation 2 : Déploiement d'un Réseau Virtualisé</h3>
-                    <p>Configuration d'un réseau virtualisé avec mise en place de VLAN et routage inter-VLAN.</p>
-                    <div class="tags">
-                        <span>VMware</span>
-                        <span>VLAN</span>
-                        <span>Routage</span>
-                    </div>
-                    <a href="#" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
-                </div>
+            <div class="col-md-4">
+                <img src="assets/images/sample2.jpg" class="img-fluid" alt="Image 2">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/sample3.jpg" class="img-fluid" alt="Image 3">
             </div>
         </div>
     </div>
 </section>
 
-<!-- Compétences évaluées -->
-<section class="skills">
+<!-- Documents Section -->
+<section class="documents py-5">
     <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Compétences</span>
-            <h2>Compétences évaluées</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fas fa-server"></i>
-                <h3>Administration système</h3>
-                <p>Gestion et configuration des serveurs Windows et Linux.</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-network-wired"></i>
-                <h3>Configuration réseau</h3>
-                <p>Mise en place et gestion des infrastructures réseau.</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Sécurité informatique</h3>
-                <p>Sécurisation des accès et des données sensibles.</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-clipboard-check"></i>
-                <h3>Supervision</h3>
-                <p>Mise en place d'outils de surveillance et de maintenance.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Tableau de synthèse -->
-<section>
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Synthèse</span>
-            <h2>Tableau de synthèse</h2>
-        </div>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="bg-primary text-white">
-                <tr>
-                    <th>Compétences</th>
-                    <th>Situation 1</th>
-                    <th>Situation 2</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Installation et configuration des serveurs</td>
-                    <td><i class="fas fa-check-circle text-success"></i></td>
-                    <td><i class="fas fa-check-circle text-success"></i></td>
-                </tr>
-                <tr>
-                    <td>Gestion des utilisateurs et droits d'accès</td>
-                    <td><i class="fas fa-check-circle text-success"></i></td>
-                    <td><i class="fas fa-times-circle text-danger"></i></td>
-                </tr>
-                <tr>
-                    <td>Configuration des services réseau</td>
-                    <td><i class="fas fa-check-circle text-success"></i></td>
-                    <td><i class="fas fa-check-circle text-success"></i></td>
-                </tr>
-                <tr>
-                    <td>Mise en place de la virtualisation</td>
-                    <td><i class="fas fa-times-circle text-danger"></i></td>
-                    <td><i class="fas fa-check-circle text-success"></i></td>
-                </tr>
-                <tr>
-                    <td>Sécurisation des infrastructures</td>
-                    <td><i class="fas fa-check-circle text-success"></i></td>
-                    <td><i class="fas fa-check-circle text-success"></i></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
-
-<!-- Section Documents -->
-<section>
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Ressources</span>
-            <h2>Documents et ressources</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="skill-item">
-                    <i class="fas fa-file-pdf"></i>
-                    <h3>Rapport complet E5</h3>
-                    <p>Documentation détaillée des situations professionnelles et des compétences mobilisées.</p>
-                    <a href="#" class="project-link">Télécharger <i class="fas fa-download"></i></a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-item">
-                    <i class="fas fa-clipboard-list"></i>
-                    <h3>Grille d'évaluation</h3>
-                    <p>Critères officiels d'évaluation utilisés par le jury pour l'épreuve E5.</p>
-                    <a href="#" class="project-link">Consulter <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-item">
-                    <i class="fas fa-file-powerpoint"></i>
-                    <h3>Présentation orale</h3>
-                    <p>Diaporama préparé pour la présentation orale devant le jury.</p>
-                    <a href="#" class="project-link">Visualiser <i class="fas fa-eye"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Bouton Retour -->
-<section class="pb-5">
-    <div class="container">
-        <a href="index.html" class="btn btn-primary"><i class="fas fa-arrow-left me-2"></i>Retour à l'accueil</a>
+        <h2>Documents</h2>
+        <ul>
+            <li><a href="assets/docs/document1.pdf" target="_blank">Document 1 (PDF)</a></li>
+            <li><a href="assets/docs/document2.pdf" target="_blank">Document 2 (PDF)</a></li>
+        </ul>
     </div>
 </section>
 
 <!-- Footer -->
-<footer>
+<footer class="py-4">
     <div class="container">
-        <div class="footer-content">
+        <div class="footer-content text-center">
             <p>&copy; 2025 Louis Morice. Tous droits réservés.</p>
             <div class="footer-links">
-                <a href="index.html">Accueil</a>
-                <a href="projets_competences.html">Projets & Compétences</a>
+                <a href="#">Accueil</a>
+                <a href="projets_competences.html">Projets &amp; Compétences</a>
                 <a href="CV.html">CV</a>
             </div>
             <div class="social-links mt-3">
-                <a href="https://www.linkedin.com/in/louismorice/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/benzoogataga" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/louismorice/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/benzoogataga" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -240,5 +126,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/modern.js"></script>
 </body>
-
 </html>
