@@ -122,7 +122,7 @@ section {
   right: 0;
   width: 40%;
   height: 100%;
-  background: url('https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80') center/cover;
+  background: url('../img/network.png') center/cover;
   z-index: 1;
 }
 

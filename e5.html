@@ -3,44 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E5 &ndash; EPREUVE E4 _ My Site 2</title>
+    <title>Épreuve E5 | Louis Morice</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand">Louis Morice</a>
+        <a class="navbar-brand" href="index.html">Louis Morice</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" href="CV.html">CV</a></li>
                 <li class="nav-item"><a class="nav-link" href="veille.html">Veille Technologique</a></li>
                 <li class="nav-item"><a class="nav-link-active" href="e5.html">E5</a></li>
-                <li class="nav-item"><a class="nav-link" href="e6.html">E6</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero pt-5 mt-5">
+<section style="padding-top: 120px; padding-bottom: 60px; background-color: var(--gray);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Épreuve</span>
+            <h2>Épreuve E5</h2>
+        </div>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section class="featured-projects" style="padding-top: 60px; padding-bottom: 40px;">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-8 hero-content">
-                <h1>Titre principal de la page E5</h1>
-                <h2>Sous-titre accrocheur</h2>
+            <div class="col-lg-6 mb-4">
+                <img src="assets/img/servers.png" alt="Épreuve E5" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <span class="section-tag">Présentation</span>
+                    <h2>Support et mise à disposition de services informatiques</h2>
+                </div>
                 <p>
-                    Ceci est le contenu principal repris intégralement de l'exemple de l'EPREUVE E4 _ My Site 2.
-                    Tout le texte est en français et demeure identique à l'exemple original.
+                    L'épreuve E5 évalue les compétences liées au support et à la mise à disposition 
+                    de services informatiques. Elle comprend la gestion des incidents, la maintenance 
+                    des équipements et l'assistance aux utilisateurs.
                 </p>
                 <div class="hero-buttons">
                     <a href="projets_competences.html" class="btn btn-primary">Voir mes projets</a>
-                    <a href="CV.html" class="btn btn-outline">Mon CV</a>
+                    <a href="CV.html" class="btn btn-outline-primary">Mon CV</a>
                 </div>
             </div>
         </div>
@@ -48,76 +68,140 @@
 </section>
 
 <!-- Content Section -->
-<section class="content-section py-5">
-    <div class="container">
-        <h2>Section de Contenu</h2>
-        <p>
-            Voici un paragraphe de contenu reprenant exactement la structure et le texte de l'exemple initial.
-            Le contenu, les titres et les paragraphes restent inchangés, seuls les styles et la mise en page
-            reflètent le CSS partagé du site.
-        </p>
-        <p>
-            Vous trouverez ici toutes les informations similaires à celles de l'EPREUVE E4 _ My Site 2,
-            incluant des descriptions, des détails techniques et des informations contextuelles publiées en français.
-        </p>
-    </div>
-
+<section style="padding-top: 60px; padding-bottom: 60px;">
     <div class="container">
         <div class="section-header">
-            <h2>Tableau</h2>
-            <p>
-                Tableau ici.
-            </p>
+            <span class="section-tag">Contenu</span>
+            <h2>Compétences évaluées</h2>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <h3>Support technique</h3>
+                <p>Gestion des incidents, résolution de problèmes et assistance aux utilisateurs.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <h3>Administration système</h3>
+                <p>Maintenance des serveurs, mise à jour des systèmes et supervision.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>Infrastructure réseau</h3>
+                <p>Configuration et maintenance des équipements réseau.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Sécurité</h3>
+                <p>Application des politiques de sécurité et protection des données.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Galerie d'Images -->
-<section class="image-gallery py-5">
+<!-- Tableau Section -->
+<section style="padding-top: 60px; padding-bottom: 60px; background-color: var(--gray);">
     <div class="container">
-        <h2>Galerie</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="assets/images/sample1.jpg" class="img-fluid" alt="Image 1">
-            </div>
-            <div class="col-md-4">
-                <img src="assets/images/sample2.jpg" class="img-fluid" alt="Image 2">
-            </div>
-            <div class="col-md-4">
-                <img src="assets/images/sample3.jpg" class="img-fluid" alt="Image 3">
-            </div>
+        <div class="section-header">
+            <span class="section-tag">Évaluation</span>
+            <h2>Tableau de compétences</h2>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="bg-primary text-white">
+                <tr>
+                    <th>Compétence</th>
+                    <th>Description</th>
+                    <th>Niveau</th>
+                    <th>Validation</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Support utilisateur</td>
+                    <td>Assistance et résolution d'incidents</td>
+                    <td>Avancé</td>
+                    <td>Validé</td>
+                </tr>
+                <tr>
+                    <td>Administration système</td>
+                    <td>Gestion des serveurs et services</td>
+                    <td>Intermédiaire</td>
+                    <td>En cours</td>
+                </tr>
+                <tr>
+                    <td>Sécurité informatique</td>
+                    <td>Application des bonnes pratiques</td>
+                    <td>Intermédiaire</td>
+                    <td>Validé</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
 
 <!-- Documents Section -->
-<section class="documents py-5">
+<section style="padding-top: 60px; padding-bottom: 60px;">
     <div class="container">
-        <h2>Documents</h2>
-        <ul>
-            <li><a href="assets/docs/document1.pdf" target="_blank">Document 1 (PDF)</a></li>
-            <li><a href="assets/docs/document2.pdf" target="_blank">Document 2 (PDF)</a></li>
-        </ul>
+        <div class="section-header">
+            <span class="section-tag">Ressources</span>
+            <h2>Documents et supports</h2>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="skill-item">
+                    <i class="fas fa-file-excel"></i>
+                    <h3>Tableau de synthèse</h3>
+                    <p>Tableau récapitulatif des compétences acquises durant ma formation.</p>
+                    <a href="assets/files/TDS_Louis_Morice.xlsx" class="project-link" download>Télécharger <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Convention de stage 1ère année</h3>
+                    <p>Convention de stage de première année de BTS SIO.</p>
+                    <a href="assets/files/Convention_Stage_Louis_Morice.pdf" class="project-link" download>Télécharger <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-item">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Convention et CERFA alternance 2ème année</h3>
+                    <p>Documents d'alternance pour la deuxième année de formation.</p>
+                    <a href="assets/files/Convention_Alternance_Louis_Morice.pdf" class="project-link" download>Télécharger Convention <i class="fas fa-download"></i></a>
+                    <br><br>
+                    <a href="assets/files/CERFA_Louis_Morice.pdf" class="project-link" download>Télécharger CERFA <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bouton Retour -->
+<section class="pb-5">
+    <div class="container">
+        <a href="index.html" class="btn btn-primary"><i class="fas fa-arrow-left me-2"></i>Retour à l'accueil</a>
     </div>
 </section>
 
 <!-- Footer -->
-<footer class="py-4">
+<footer>
     <div class="container">
-        <div class="footer-content text-center">
+        <div class="footer-content">
             <p>&copy; 2025 Louis Morice. Tous droits réservés.</p>
             <div class="footer-links">
-                <a href="#">Accueil</a>
-                <a href="projets_competences.html">Projets &amp; Compétences</a>
+                <a href="index.html">Accueil</a>
+                <a href="projets_competences.html">Projets & Compétences</a>
                 <a href="CV.html">CV</a>
             </div>
             <div class="social-links mt-3">
-                <a href="https://www.linkedin.com/in/louismorice/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/benzoogataga" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+                <a href="https://www.linkedin.com/in/louismorice/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/benzoogataga" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </div>
