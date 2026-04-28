@@ -49,7 +49,7 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">BTS SIO</span>
-            <h2>Mettre à disposition un service informatique</h2>
+            <h2>Mettre à disposition des utilisateurs un service informatique</h2>
         </div>
     </div>
 </section>
@@ -59,11 +59,43 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Compétence 5</span>
-            <h2>Déploiement, tests et accompagnement</h2>
+            <h2>Tests, déploiement et accompagnement</h2>
             <p>
-                Cette page regroupe les actions menées pour tester, déployer et accompagner
-                la mise à disposition de services informatiques.
+                Ce bloc regroupe trois compétences liées à la mise en service d'une solution informatique :
+                réalisation des tests d'intégration et d'acceptation, déploiement en production,
+                et accompagnement des utilisateurs. Les réalisations s'appuient sur le hackathon BlackRaven Group
+                et sur les projets d'infrastructure conduits à la SEMMARIS.
             </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contextes -->
+<section style="padding-top: 20px; padding-bottom: 40px; background-color: var(--gray);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Contextes</span>
+            <h2>Deux projets de référence</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100 bg-white">
+                    <div class="card-body p-4">
+                        <h4 class="mb-3"><i class="fas fa-flask me-2 text-primary"></i>Hackathon - BlackRaven Group</h4>
+                        <p>Le hackathon a abouti au déploiement de l'ensemble des services de BlackRaven Group sur une infrastructure auto-hébergée sous Dokploy (Docker + Docker Swarm) : GLPI sur Proxmox, site vitrine sur Netlify (blackraven.fr), API jeu de piste et frontend consumer sur Dokploy. Chaque service a fait l'objet de tests et d'une documentation utilisateur.</p>
+                        <p class="mb-0 text-muted">Infrastructure : Dokploy (Docker + Docker Swarm). Services : GLPI (Proxmox, API v1), blackraven.fr (Netlify, domaine IONOS), API jeu de piste + frontend (Dokploy).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100 bg-white">
+                    <div class="card-body p-4">
+                        <h4 class="mb-3"><i class="fas fa-building me-2 text-primary"></i>Alternance - SEMMARIS</h4>
+                        <p>À la SEMMARIS, les projets techniques hebdomadaires ont tous impliqué une phase de tests et de déploiement sur des serveurs Linux. Les travaux autour de Dokploy, Ansible, Kubernetes et Argo CD constituent les réalisations les plus significatives de ce bloc.</p>
+                        <p class="mb-0 text-muted">Technologies : Dokploy, Ansible, Kubernetes, Argo CD, Linux.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -78,18 +110,21 @@
         <div class="skills-grid">
             <div class="skill-item">
                 <i class="fas fa-vial"></i>
-                <h3>Réaliser les tests d’intégration</h3>
-                <p>Tests de validation sur scripts, systèmes ou services déployés.</p>
+                <h3>C16 : Réaliser les tests d'intégration et d'acceptation</h3>
+                <p><strong>BlackRaven Group :</strong> Rédaction de scénarios de tests fonctionnels et techniques pour l'ensemble des services de BlackRaven Group : GLPI (création de ticket, affectation, changement de statut, clôture avec compte rendu), site vitrine (navigation desktop et mobile, formulaire de contact), application PHP/MySQL (authentification, lecture et écriture en base, gestion des erreurs). Mise en place d'un environnement de préproduction pour valider chaque livrable avant passage en production.</p>
+                <p><strong>SEMMARIS :</strong> Tests réalisés avant chaque déploiement : validation des playbooks Ansible sur un environnement isolé avant application sur les serveurs cibles, vérification du comportement des conteneurs dans le cluster Kubernetes, contrôle de la synchronisation Argo CD entre le dépôt Git et l'état du cluster.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-rocket"></i>
-                <h3>Déployer un service</h3>
-                <p>Déploiement de solutions informatiques : supervision, scripts ou services systèmes.</p>
+                <h3>C17 : Déployer un service</h3>
+                <p><strong>BlackRaven Group :</strong> Déploiement complet de l'infrastructure BlackRaven Group : installation et configuration de GLPI sur un serveur Proxmox (Active Directory, DNS, DHCP, GLPI, Suricata, Grafana) avec base de données MySQL, basculement de l'API GLPI v2 vers l'API v1 pour résoudre une incompatibilité avec les jetons hexadécimaux, déploiement du site vitrine sur Netlify avec enregistrement du nom de domaine blackraven.fr sur IONOS (mise en ligne initiale via CloudFlare Workers), et déploiement de l'application de jeu de piste géolocalisé sur Dokploy : API REST (api.blackraven.fr) avec gestion des utilisateurs, moteur d'énigmes, intégration Mapbox et stockage base de données, accompagnée de son frontend de consommation (api-consumer.blackraven.fr).</p>
+                <p><strong>SEMMARIS :</strong> Déploiement de Dokploy sur un serveur Linux de test, offrant une interface de gestion des conteneurs Docker comparable à un PaaS léger. Écriture et exécution de playbooks Ansible pour automatiser l'installation et la configuration de services sur les serveurs Linux. Mise en place d'un cluster Kubernetes et intégration d'Argo CD pour la livraison continue depuis des dépôts Git vers le cluster (approche GitOps).</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-hands-helping"></i>
-                <h3>Accompagner les utilisateurs</h3>
-                <p>Support technique, assistance et documentation utilisateurs.</p>
+                <h3>C18 : Accompagner les utilisateurs dans la mise en place d'un service</h3>
+                <p><strong>BlackRaven Group :</strong> Rédaction d'un guide d'utilisation de GLPI à destination des utilisateurs de BlackRaven Group : soumettre un ticket, suivre l'avancement de sa demande, communiquer avec le support et clôturer une demande résolue. Documentation technique et procédures internes publiées sur Mintlify (docs.blackraven.fr), couvrant les processus de travail, les décisions horodatées et le cadre méthodologique OSINT de la structure. Intégration d'un formulaire de remontée de besoin d'aide ou d'amélioration dans le site vitrine, relié à la boîte mail du support.</p>
+                <p><strong>SEMMARIS :</strong> Documentation technique rédigée dans Confluence pour les membres du service informatique, couvrant les procédures d'exploitation des outils déployés (Ansible, Dokploy). Assistance apportée aux collègues lors de la prise en main de nouveaux services ou outils introduits dans l'environnement de travail.</p>
             </div>
         </div>
     </div>

@@ -61,9 +61,41 @@
             <span class="section-tag">Compétence 1</span>
             <h2>Suivi, sécurité et continuité des ressources</h2>
             <p>
-                Cette page synthétise les activités réalisées autour de l’inventaire, des habilitations,
-                de la continuité de service et des bonnes pratiques de gestion du patrimoine informatique.
+                Ce bloc couvre six compétences fondamentales : recensement du parc, application des référentiels,
+                gestion des habilitations, continuité de service, sauvegardes et règles d'utilisation.
+                Les réalisations présentées ici s'appuient sur deux contextes complémentaires :
+                le hackathon pédagogique conduit pour BlackRaven Group et l'alternance au service informatique de la SEMMARIS.
             </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contextes -->
+<section style="padding-top: 20px; padding-bottom: 40px; background-color: var(--gray);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Contextes</span>
+            <h2>Deux projets de référence</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100 bg-white">
+                    <div class="card-body p-4">
+                        <h4 class="mb-3"><i class="fas fa-flask me-2 text-primary"></i>Hackathon - BlackRaven Group</h4>
+                        <p>Projet pédagogique réalisé en équipe de cinq étudiants, simulant le déploiement d'une infrastructure informatique complète pour BlackRaven Group, entreprise fictive spécialisée dans l'OSINT et la veille stratégique. J'y ai occupé le rôle de Chef de projet, coordonnant les travaux des pôles Infra, Support, Dev et Marketing.</p>
+                        <p class="mb-0 text-muted">Infrastructure : serveur Proxmox (AD, DNS, DHCP, GLPI, Suricata, Grafana), site vitrine sur Netlify (blackraven.fr, domaine IONOS), API jeu de piste + frontend consumer sur Dokploy (Docker + Docker Swarm, infrastructure de Louis), accès VPN WireGuard.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100 bg-white">
+                    <div class="card-body p-4">
+                        <h4 class="mb-3"><i class="fas fa-building me-2 text-primary"></i>Alternance - SEMMARIS</h4>
+                        <p>La SEMMARIS est la société d'économie mixte gestionnaire du Marché d'intérêt national de Rungis, le plus grand marché de gros alimentaire au monde. Au sein du service informatique, j'ai assuré la maintenance et l'exploitation du parc, des serveurs et du matériel des salariés.</p>
+                        <p class="mb-0 text-muted">Outils : GLPI, Zabbix, Entra ID, Intune, Active Directory, Veeam Backup, ERP ULIS.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -78,36 +110,39 @@
         <div class="skills-grid">
             <div class="skill-item">
                 <i class="fas fa-clipboard-list"></i>
-                <h3>Recenser et identifier les ressources numériques</h3>
-                <p>Participation à l’inventaire des ressources informatiques via des outils de gestion de parc, supervision ou documentation technique interne.</p>
-                <p class="text-muted">Outils utilisés : GLPI, Zabbix, Entra ID, Intune.</p>
+                <h3>C1 : Recenser et identifier les ressources numériques</h3>
+                <p><strong>BlackRaven Group :</strong> Réalisation de l'inventaire complet du parc informatique dans GLPI : cinq postes de travail (deux Ubuntu pour les rôles Dev et Infra, trois Windows pour les rôles Support, Marketing et Chef de projet), serveur Proxmox hébergeant Active Directory, DNS, DHCP et GLPI, ressources réseau associées (pare-feu WAN/LAN, accès VPN WireGuard), Suricata déployé en IDS/IPS sur le périmètre réseau, et Grafana pour la supervision de l'infrastructure. Chaque fiche renseignait le modèle, le système d'exploitation, l'adresse MAC et l'utilisateur affecté.</p>
+                <p><strong>SEMMARIS :</strong> Contribution à la maintenance de l'inventaire via GLPI, Intune et Entra ID, avec mise à jour des fiches d'équipement lors des arrivées, départs ou remplacements de matériel au sein du service informatique.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-book"></i>
-                <h3>Exploiter des référentiels, normes et standards</h3>
-                <p>Application de standards d’administration système et réseau : Active Directory, conventions internes, procédures IT et documentation technique.</p>
+                <h3>C2 : Exploiter des référentiels, normes et standards</h3>
+                <p><strong>BlackRaven Group :</strong> Rédaction d'une procédure de gestion des incidents calquée sur ITIL v4, couvrant les étapes de détection, enregistrement, qualification, résolution et clôture avec notification à l'utilisateur. Rédaction complémentaire d'une procédure qualité inspirée de l'ISO 9001, définissant les critères d'acceptation des livrables de l'équipe.</p>
+                <p><strong>SEMMARIS :</strong> Application des bonnes pratiques ITIL au quotidien dans le traitement des demandes et des incidents, en respectant les procédures internes du service informatique.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-user-shield"></i>
-                <h3>Mettre en place et vérifier les habilitations</h3>
-                <p>Gestion des comptes utilisateurs, groupes et droits d’accès aux ressources réseau et applicatives.</p>
-                <p class="text-muted">Exemple : ajouts de groupes Active Directory pour accéder à un partage SMB ou à l’ERP ULIS.</p>
+                <h3>C3 : Mettre en place et vérifier les habilitations</h3>
+                <p><strong>BlackRaven Group :</strong> Paramétrage des profils d'accès dans GLPI selon le principe du moindre privilège : profil Administrateur pour le responsable IT, profil Technicien pour les pôles Infra et Support, profil Observateur pour les autres rôles. Configuration des droits système sur les postes Ubuntu (fichier sudoers) et Windows (groupes locaux).</p>
+                <p><strong>SEMMARIS :</strong> Gestion des comptes utilisateurs dans Active Directory : création, modification et désactivation de comptes, gestion des appartenances aux groupes d'accès aux partages SMB et aux applications métier dont l'ERP ULIS. Vérification de la cohérence des droits lors des mouvements de personnel.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-network-wired"></i>
-                <h3>Vérifier la continuité de service</h3>
-                <p>Supervision des systèmes et services informatiques, suivi des alertes et vérification de la disponibilité.</p>
+                <h3>C4 : Vérifier les conditions de la continuité de service</h3>
+                <p><strong>BlackRaven Group :</strong> Rédaction d'un Plan de Reprise d'Activité couvrant les scénarios de perte de la base MySQL de GLPI et d'indisponibilité du serveur Proxmox, et d'un Plan de Continuité d'Activité définissant les mesures permettant de maintenir l'accès au site vitrine et à l'API durant un incident. Mise en place de Grafana pour la supervision de l'infrastructure (métriques serveurs, disponibilité des services) et déploiement de Suricata comme système de détection et de prévention d'intrusion sur le périmètre réseau.</p>
+                <p><strong>SEMMARIS :</strong> Participation à la supervision des serveurs et services via Zabbix, prise en charge des alertes de disponibilité et réalisation de la maintenance préventive sur les équipements du parc.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-database"></i>
-                <h3>Gérer des sauvegardes</h3>
-                <p>Participation à la vérification ou à la gestion des politiques de sauvegarde.</p>
-                <p class="text-muted">Veeam Backup : 3 niveaux (backup disque, copie des backups disques, backups sur bandes).</p>
+                <h3>C5 : Gérer des sauvegardes</h3>
+                <p><strong>BlackRaven Group :</strong> Mise en place de sauvegardes de la base de données MySQL de GLPI par export mysqldump planifié, les dumps étant stockés dans un répertoire dédié du serveur Azure. Réalisation de snapshots des machines virtuelles Ubuntu, documentés dans la procédure de sauvegarde rédigée pour l'équipe.</p>
+                <p><strong>SEMMARIS :</strong> Contribution à la gestion des sauvegardes via Veeam Backup, structurées sur trois niveaux : sauvegarde disque locale, copie des sauvegardes sur un disque secondaire, et archivage sur bandes magnétiques pour la rétention long terme.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-shield-alt"></i>
-                <h3>Vérifier le respect des règles d’utilisation</h3>
-                <p>Application des politiques internes de sécurité et bonnes pratiques IT.</p>
+                <h3>C6 : Vérifier le respect des règles d'utilisation</h3>
+                <p><strong>BlackRaven Group :</strong> Rédaction de la charte informatique de BlackRaven Group, définissant les règles d'usage des ressources numériques : installation de logiciels, gestion des mots de passe, utilisation de la messagerie professionnelle, confidentialité des données et sanctions applicables en cas de manquement.</p>
+                <p><strong>SEMMARIS :</strong> Application et vérification des politiques de sécurité : contrôle des logiciels installés sur les postes, rappel des bonnes pratiques auprès des utilisateurs, sensibilisation aux risques de phishing et d'ingénierie sociale.</p>
             </div>
         </div>
     </div>

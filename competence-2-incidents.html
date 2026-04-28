@@ -49,7 +49,7 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">BTS SIO</span>
-            <h2>Répondre aux incidents et demandes d’assistance</h2>
+            <h2>Répondre aux incidents et demandes d'assistance</h2>
         </div>
     </div>
 </section>
@@ -59,11 +59,42 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Compétence 2</span>
-            <h2>Support, diagnostic et suivi des demandes</h2>
+            <h2>Support, diagnostic et traitement des demandes</h2>
             <p>
-                Cette page présente les activités liées à la gestion des incidents, au traitement des demandes
-                réseau, système et applicatives, ainsi qu’au suivi des utilisateurs.
+                Ce bloc couvre la collecte et l'orientation des demandes via un outil de ticketing,
+                le traitement des incidents réseau et système, et la résolution des problèmes applicatifs.
+                Les activités présentées s'appuient sur le hackathon BlackRaven Group et sur l'alternance à la SEMMARIS.
             </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contextes -->
+<section style="padding-top: 20px; padding-bottom: 40px; background-color: var(--gray);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Contextes</span>
+            <h2>Deux projets de référence</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100 bg-white">
+                    <div class="card-body p-4">
+                        <h4 class="mb-3"><i class="fas fa-flask me-2 text-primary"></i>Hackathon - BlackRaven Group</h4>
+                        <p>Dans ce projet pédagogique, j'ai occupé le rôle de Chef de projet pour l'entreprise fictive BlackRaven Group. Le pôle Support de l'équipe était en charge du traitement des incidents, et j'ai contribué à la configuration de l'outil de ticketing GLPI et à la simulation d'incidents réseau et applicatifs.</p>
+                        <p class="mb-0 text-muted">Outil principal : GLPI (ticketing, inventaire, SLA). Environnement : Ubuntu, Windows, infrastructure Dokploy (Docker + Docker Swarm).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100 bg-white">
+                    <div class="card-body p-4">
+                        <h4 class="mb-3"><i class="fas fa-building me-2 text-primary"></i>Alternance - SEMMARIS</h4>
+                        <p>Au service informatique du Marché de Rungis, le traitement des incidents utilisateurs constituait une partie importante du quotidien : tickets GLPI, interventions sur le parc, support sur les applications métier et les accès réseau.</p>
+                        <p class="mb-0 text-muted">Outils : GLPI, Office 365, ERP ULIS, VPN, Active Directory.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -78,19 +109,21 @@
         <div class="skills-grid">
             <div class="skill-item">
                 <i class="fas fa-ticket-alt"></i>
-                <h3>Collecter, suivre et orienter les demandes</h3>
-                <p>Utilisation d’un outil de ticketing pour la gestion et le suivi des incidents utilisateurs.</p>
+                <h3>C7 : Collecter, suivre et orienter les demandes</h3>
+                <p><strong>BlackRaven Group :</strong> Paramétrage complet de la gestion de tickets dans GLPI : définition des catégories d'incidents (réseau, système, demande applicative, demande de service), configuration des niveaux de priorité, des SLA et des règles d'affectation automatique selon la catégorie. Suivi et traitement de l'ensemble des tickets simulés sur la durée du hackathon, avec clôture documentée pour chaque demande.</p>
+                <p><strong>SEMMARIS :</strong> Traitement quotidien des demandes utilisateurs via GLPI au service informatique du Marché de Rungis : réception, qualification du type d'incident, prise en charge, résolution et clôture avec compte rendu. Escalade vers les équipes spécialisées lorsque la nature de l'incident le nécessitait.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-network-wired"></i>
-                <h3>Traiter les demandes réseau et système</h3>
-                <p>Support utilisateurs, gestion incidents systèmes, réseau ou accès.</p>
+                <h3>C8 : Traiter les demandes réseau et système</h3>
+                <p><strong>BlackRaven Group :</strong> Simulation d'un incident réseau au sein de l'infrastructure BlackRaven : conflit d'adresses IP entre deux postes après une reconfiguration manuelle. Diagnostic via les journaux GLPI et les commandes réseau (ping, ip a, arp), résolution par mise à jour de la configuration DHCP et vérification des baux actifs. L'incident complet a été documenté dans un ticket de résolution.</p>
+                <p><strong>SEMMARIS :</strong> Traitement d'incidents variés au Marché de Rungis : problèmes de connexion VPN, pertes d'accès réseau, pannes de session utilisateur sur poste Windows. Maintenance et exploitation des serveurs Linux et Windows, intervention sur les équipements du parc lors de pannes matérielles.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-desktop"></i>
-                <h3>Traiter les demandes applicatives</h3>
-                <p>Support sur logiciels métiers, bureautique ou services internes.</p>
-                <p class="text-muted">Exemples : Office 365 (licences premium), ERP ULIS, VPN, applications métiers diverses.</p>
+                <h3>C9 : Traiter les demandes concernant les applications</h3>
+                <p><strong>BlackRaven Group :</strong> Deux incidents applicatifs traités durant le hackathon. Premier incident : incompatibilité de l'API v2 de GLPI avec les jetons d'authentification hexadécimaux, bloquant l'intégration de l'application cliente ; diagnostic par analyse des réponses API et des logs serveur, résolution par basculement vers l'API v1 de GLPI. Deuxième incident : erreur 500 sur l'application web du jeu de piste hébergée sur Dokploy, provoquée par un problème de connexion à la base de données suite à une rotation d'identifiants ; identification de la cause par analyse des logs du conteneur Docker, correction des variables d'environnement, vérification du rétablissement du service. Les deux incidents ont fait l'objet d'un ticket de résolution documenté et clôturé.</p>
+                <p><strong>SEMMARIS :</strong> Support sur les applications utilisées quotidiennement par les équipes du Marché de Rungis : Office 365 (gestion des licences, configuration d'Outlook, partage de calendriers), ERP ULIS, accès VPN distant et diverses applications métier internes.</p>
             </div>
         </div>
     </div>
