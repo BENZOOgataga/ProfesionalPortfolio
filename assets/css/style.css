@@ -82,6 +82,24 @@ section {
   opacity: 1;
 }
 
+.nav-link.dropdown-toggle::after {
+  border: none;
+  display: block;
+  vertical-align: unset;
+  margin-left: 0;
+}
+
+.nav-link.dropdown-toggle::before {
+  content: '▾';
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  line-height: 1;
+  color: var(--text-dark);
+}
+
 .nav-link-active {
   font-size: 15px;
   font-weight: 700;
