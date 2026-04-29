@@ -11,6 +11,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Louis Morice",
+      "url": "https://louismorice.fr",
+      "jobTitle": "Chargé de Mission IT",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "SEMMARIS",
+        "alternateName": "Marché International de Rungis",
+        "url": "https://www.rungisinternational.com/decouvrir/missions",
+        "sameAs": "https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_d%27%C3%A9conomie_mixte_d%27am%C3%A9nagement_et_de_gestion_du_march%C3%A9_d%27int%C3%A9r%C3%AAt_national_de_Rungis"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "EFREI",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Villejuif",
+          "addressCountry": "FR"
+        }
+      }
+    }
+    </script>
 </head>
 <body>
 <!-- Navigation -->
@@ -89,52 +114,43 @@
                             <h3 class="mb-3" style="font-size: 1.5rem;">Compétences Techniques</h3>
 
                             <div class="mb-3">
-                                <div class="skill-name">
+                                <p class="text-uppercase mb-2" style="color: var(--primary); font-size: 0.7rem; font-weight: 600; letter-spacing: 1px;">Systèmes & Infrastructure</p>
+                                <div class="tags">
                                     <span>Linux</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage" style="width: 90%;"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="skill-name">
-                                    <span>Python</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage" style="width: 85%;"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="skill-name">
-                                    <span>HTML/CSS</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage" style="width: 80%;"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="skill-name">
-                                    <span>Réseau</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage" style="width: 75%;"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="skill-name">
                                     <span>Windows Server</span>
-                                    <span>30%</span>
+                                    <span>Active Directory</span>
                                 </div>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage" style="width: 70%;"></div>
+                            </div>
+
+                            <div class="mb-3">
+                                <p class="text-uppercase mb-2" style="color: var(--primary); font-size: 0.7rem; font-weight: 600; letter-spacing: 1px;">Conteneurisation & Orchestration</p>
+                                <div class="tags">
+                                    <span>Docker</span>
+                                    <span>Docker Swarm</span>
+                                    <span>Kubernetes</span>
+                                    <span>Argo CD</span>
+                                    <span>Dokploy</span>
+                                    <span>Freelens</span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <p class="text-uppercase mb-2" style="color: var(--primary); font-size: 0.7rem; font-weight: 600; letter-spacing: 1px;">Réseaux & Cybersécurité</p>
+                                <div class="tags">
+                                    <span>Administration réseau</span>
+                                    <span>Cybersécurité</span>
+                                    <span>VPN</span>
+                                    <span>Firewall</span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <p class="text-uppercase mb-2" style="color: var(--primary); font-size: 0.7rem; font-weight: 600; letter-spacing: 1px;">Développement & Scripting</p>
+                                <div class="tags">
+                                    <span>Python</span>
+                                    <span>Bash</span>
+                                    <span>PowerShell</span>
+                                    <span>HTML/CSS</span>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +208,7 @@
                 <div class="mb-5">
                     <h3 style="font-size: 1.8rem; margin-bottom: 20px;">À propos</h3>
                     <p style="color: var(--text-light); font-size: 1.1rem;">
-                        Étudiant en BTS Services Informatiques aux Organisations à EFREI, je me spécialise dans l'administration de systèmes et réseaux avec un intérêt particulier pour la cybersécurité et le développement Python. Motivé, rigoureux et passionné par les nouvelles technologies, je recherche une entreprise pour poursuivre mes études en alternance.
+                        Alternant Chargé de Mission IT à la SEMMARIS (Marché International de Rungis), je finalise mon BTS SIO option SISR à l'EFREI. Mes missions couvrent l'administration système et réseau, la cybersécurité, la conteneurisation et la conduite de projets IT. Je m'oriente vers un Bachelor Ethical Hacking puis un Mastère Cybersécurité à l'EFREI, avec pour objectif de devenir expert en sécurité réseau et infrastructure.
                     </p>
                 </div>
 
@@ -203,8 +219,21 @@
                     <div class="card border-0 shadow-sm mb-4">
                         <div class="card-body p-4">
                             <div class="d-flex justify-content-between">
+                                <h4>Bachelor Ethical Hacking <span style="font-size: 0.85rem; color: var(--text-light); font-weight: 400;">(à venir)</span></h4>
+                                <span class="badge" style="background: linear-gradient(135deg, #6c757d, #495057); align-self: flex-start;">2026 - 2027</span>
+                            </div>
+                            <h5 style="color: var(--primary); font-size: 1.1rem; margin: 10px 0;">EFREI, Villejuif</h5>
+                            <p style="color: var(--text-light);">
+                                Spécialisation en cybersécurité offensive et défensive. Prévu à la suite du BTS, avec poursuite vers un Mastère Cybersécurité (orientation expert/ingénieur réseau et sécurité).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between">
                                 <h4>BTS SIO option SISR</h4>
-                                <span class="badge" style="background: linear-gradient(90deg, var(--primary), var(--secondary)); align-self: flex-start;">2022 - 2024</span>
+                                <span class="badge" style="background: linear-gradient(90deg, var(--primary), var(--secondary)); align-self: flex-start;">2024 - 2026</span>
                             </div>
                             <h5 style="color: var(--primary); font-size: 1.1rem; margin: 10px 0;">EFREI, Villejuif</h5>
                             <p style="color: var(--text-light);">
@@ -217,7 +246,7 @@
                         <div class="card-body p-4">
                             <div class="d-flex justify-content-between">
                                 <h4>Baccalauréat Technologique</h4>
-                                <span class="badge" style="background: linear-gradient(90deg, var(--primary), var(--secondary)); align-self: flex-start;">2019 - 2022</span>
+                                <span class="badge" style="background: linear-gradient(90deg, var(--primary), var(--secondary)); align-self: flex-start;">2021 - 2024</span>
                             </div>
                             <h5 style="color: var(--primary); font-size: 1.1rem; margin: 10px 0;">Institut d'Agneaux, Normandie</h5>
                             <p style="color: var(--text-light);">
@@ -234,10 +263,37 @@
                     <div class="card border-0 shadow-sm mb-4">
                         <div class="card-body p-4">
                             <div class="d-flex justify-content-between">
+                                <h4>Alternance - Chargé de Mission IT</h4>
+                                <span class="badge" style="background: linear-gradient(90deg, var(--primary), var(--secondary)); align-self: flex-start;">Juin 2025 - Août 2026</span>
+                            </div>
+                            <h5 style="color: var(--primary); font-size: 1.1rem; margin: 10px 0;">
+                                <a href="https://www.rungisinternational.com/decouvrir/missions" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">SEMMARIS – Marché International de Rungis</a>, Service IT
+                            </h5>
+                            <p style="color: var(--text-light);">
+                                Administration système et réseau, cybersécurité, conduite de projets IT et support technique au sein du plus grand marché de gros alimentaire au monde. Mise en place et gestion d'environnements conteneurisés (Docker, Kubernetes), déploiement d'applications via Argo CD et Dokploy, et participation active aux projets d'infrastructure.
+                            </p>
+                            <div class="tags mt-3">
+                                <span>Admin. système</span>
+                                <span>Réseaux</span>
+                                <span>Cybersécurité</span>
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>Argo CD</span>
+                                <span>Gestion de projet</span>
+                                <span>Support technique</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between">
                                 <h4>Stage - Technicien informatique</h4>
                                 <span class="badge" style="background: linear-gradient(90deg, var(--primary), var(--secondary)); align-self: flex-start;">Mai 2025</span>
                             </div>
-                            <h5 style="color: var(--primary); font-size: 1.1rem; margin: 10px 0;">Service Informatique de la SEMMARIS, Rungis</h5>
+                            <h5 style="color: var(--primary); font-size: 1.1rem; margin: 10px 0;">
+                                Service Informatique de la <a href="https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_d%27%C3%A9conomie_mixte_d%27am%C3%A9nagement_et_de_gestion_du_march%C3%A9_d%27int%C3%A9r%C3%AAt_national_de_Rungis" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">SEMMARIS</a>, Rungis
+                            </h5>
                             <p style="color: var(--text-light);">
                                 Maintenance du parc informatique, assistance aux utilisateurs, déploiement de postes de travail et gestion des équipements réseau.
                             </p>
@@ -246,25 +302,6 @@
                                 <span>Maintenance</span>
                                 <span>Windows</span>
                                 <span>Active Directory</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="d-flex justify-content-between">
-                                <h4>Alternance - Administrateur Système et Réseaux</h4>
-                                <span class="badge" style="background: linear-gradient(90deg, var(--primary), var(--secondary)); align-self: flex-start;">Juin 2025 - Août 2026</span>
-                            </div>
-                            <h5 style="color: var(--primary); font-size: 1.1rem; margin: 10px 0;">SEMMARIS - Marché de Rungis, Service IT</h5>
-                            <p style="color: var(--text-light);">
-                                Administration système et réseau, support technique aux utilisateurs, maintenance des infrastructures informatiques et gestion des services IT dans le plus grand marché de gros alimentaire au monde.
-                            </p>
-                            <div class="tags mt-3">
-                                <span>Administration système</span>
-                                <span>Réseaux</span>
-                                <span>Support technique</span>
-                                <span>Infrastructure IT</span>
                             </div>
                         </div>
                     </div>
@@ -279,7 +316,7 @@
                                 <div class="card-body p-4">
                                     <h4 style="font-size: 1.3rem;">Pas encore de certifications</h4>
                                     <p style="color: var(--text-light);">
-                                        Mais je compte bien en avoir !
+                                        Choix délibéré : la plupart des certifications pertinentes (CCNA, etc.) expirent sous 2 à 3 ans. Je prévois d'en obtenir en fin de cursus, lors du Mastère Cybersécurité, pour maximiser leur valeur.
                                     </p>
                                 </div>
                             </div>
