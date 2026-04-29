@@ -100,27 +100,12 @@ section {
   color: var(--text-dark);
 }
 
-.nav-link-active {
-  font-size: 15px;
-  font-weight: 700;
+.nav-link.active-page {
   color: var(--primary) !important;
-  margin: 0 15px;
-  position: relative;
-  transition: var(--transition);
-  text-decoration: none;
-  display: inline-block;
-  line-height: 1.5;
-  padding: 0.5rem 0;
 }
 
-.nav-link-active:after {
-  content: '';
-  position: absolute;
+.nav-link.active-page:after {
   width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
   opacity: 1;
 }
 
