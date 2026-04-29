@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet: Déploiement de serveur | Louis Morice</title>
+    <title>Services Windows et annuaire | Louis Morice</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -22,8 +22,8 @@
 <section style="padding-top: 120px; padding-bottom: 60px; background-color: var(--gray);">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Projet</span>
-            <h2>Déploiement de serveur</h2>
+            <span class="section-tag">Projet académique</span>
+            <h2>Services Windows et annuaire</h2>
         </div>
     </div>
 </section>
@@ -33,11 +33,11 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Présentation</span>
-            <h2>Présentation du projet</h2>
+            <h2>Contexte technique</h2>
             <p>
-                Mise en place d'une architecture réseau pour une petite entreprise, comprenant un serveur de fichiers,
-                un serveur DNS et une gestion des utilisateurs via Active Directory. Le projet couvre la conception,
-                le déploiement et la validation des services.
+                Mise en place d'un socle d'infrastructure Windows pour centraliser l'identité, la résolution de noms
+                et l'accès aux fichiers. Le travail porte sur la cohérence entre annuaire, DNS, groupes, droits d'accès
+                et intégration des postes clients dans un environnement contrôlé.
             </p>
         </div>
     </div>
@@ -47,34 +47,40 @@
 <section class="featured-projects" style="padding-top: 40px; padding-bottom: 60px;">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Objectifs</span>
-            <h2>Objectifs et périmètre</h2>
+            <span class="section-tag">Périmètre</span>
+            <h2>Architecture et services déployés</h2>
         </div>
 
         <div class="row">
             <div class="col-md-6 project-card">
                 <div class="project-content">
-                    <h3>Infrastructure</h3>
-                    <p>Définition de l’architecture réseau, adressage et préparation du serveur Windows.</p>
+                    <h3>Socle serveur</h3>
+                    <p>
+                        Préparation du serveur, adressage IP, configuration DNS et vérification des dépendances
+                        nécessaires avant promotion du contrôleur de domaine.
+                    </p>
                     <div class="tags">
                         <span>Windows Server</span>
                         <span>Réseau</span>
                         <span>DNS</span>
                     </div>
-                    <a href="projets_competences.html" class="project-link">Voir mes projets <i class="fas fa-arrow-right"></i></a>
+                    <a href="projets_competences.html" class="project-link">Retour à la synthèse <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="col-md-6 project-card">
                 <div class="project-content">
-                    <h3>Services déployés</h3>
-                    <p>Mise en place d’Active Directory, partages SMB, gestion des droits et intégration des postes.</p>
+                    <h3>Identité et accès</h3>
+                    <p>
+                        Création de l'annuaire, structuration des utilisateurs et groupes, partages SMB, droits NTFS
+                        et tests d'accès depuis les postes joints au domaine.
+                    </p>
                     <div class="tags">
                         <span>Active Directory</span>
                         <span>SMB</span>
                         <span>GPO</span>
                     </div>
-                    <a href="projets_competences.html" class="project-link">Voir mes projets <i class="fas fa-arrow-right"></i></a>
+                    <a href="projets_competences.html" class="project-link">Retour à la synthèse <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -86,28 +92,28 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Compétences</span>
-            <h2>Compétences développées</h2>
+            <h2>Compétences mobilisées</h2>
         </div>
         <div class="skills-grid">
             <div class="skill-item">
                 <i class="fas fa-server"></i>
-                <h3>Administration système</h3>
-                <p>Installation, configuration et maintenance de serveurs Linux et Windows.</p>
+                <h3>Administration Windows Server</h3>
+                <p>Installation des rôles, configuration des services et validation du fonctionnement côté serveur et client.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-network-wired"></i>
-                <h3>Réseaux</h3>
-                <p>Configuration et sécurisation d'infrastructures réseau, VLAN, routage.</p>
+                <h3>DNS et adressage</h3>
+                <p>Configuration de la résolution interne et analyse des dépendances entre domaine, DNS et postes clients.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-shield-alt"></i>
-                <h3>Cybersécurité</h3>
-                <p>Mise en place de solutions de sécurité et bonnes pratiques.</p>
+                <h3>Gestion des droits</h3>
+                <p>Application du principe du moindre privilège sur les groupes, partages et permissions de fichiers.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-code"></i>
-                <h3>Développement</h3>
-                <p>Programmation en Python, scripting pour l'automatisation des tâches.</p>
+                <h3>Documentation</h3>
+                <p>Traçabilité des choix de configuration, tests réalisés et points de contrôle nécessaires à l'exploitation.</p>
             </div>
         </div>
     </div>
@@ -132,18 +138,18 @@
                 <tbody>
                 <tr>
                     <td>Cadrage</td>
-                    <td>Analyse des besoins, inventaire des ressources, choix des services</td>
-                    <td>Architecture validée</td>
+                    <td>Identification des services nécessaires, dépendances DNS et structure des comptes</td>
+                    <td>Périmètre technique défini</td>
                 </tr>
                 <tr>
                     <td>Déploiement</td>
-                    <td>Installation Windows Server, DNS, AD, partages SMB</td>
-                    <td>Services opérationnels</td>
+                    <td>Installation des rôles, création du domaine, groupes, partages et droits</td>
+                    <td>Services intégrés</td>
                 </tr>
                 <tr>
                     <td>Validation & documentation</td>
-                    <td>Tests d'accès, sauvegardes, procédures</td>
-                    <td>Exploitation prête</td>
+                    <td>Tests de connexion, résolution DNS, accès SMB et application des permissions</td>
+                    <td>Comportement vérifié</td>
                 </tr>
                 </tbody>
             </table>
@@ -187,27 +193,34 @@
     </div>
 </section>
 
-<!-- Perspectives -->
+<!-- Bilan -->
 <section style="padding-top: 60px; padding-bottom: 60px;">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Avenir</span>
-            <h2>Perspectives professionnelles</h2>
+            <span class="section-tag">Bilan</span>
+            <h2>Contraintes et enseignements</h2>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body p-4">
-                        <h4>Poursuite d'études</h4>
-                        <p>Mon projet de poursuite d'études en alternance dans le domaine de l'administration système et réseaux ou de la cybersécurité.</p>
+                        <h4>Dépendances critiques</h4>
+                        <p>
+                            Le bon fonctionnement de l'annuaire dépend directement de la résolution DNS, de l'adressage
+                            et de la cohérence des noms. Les tests ont donc porté sur les flux plutôt que sur les rôles
+                            pris isolément.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body p-4">
-                        <h4>Objectifs professionnels</h4>
-                        <p>Mes objectifs à court et moyen terme concernant mon développement professionnel et les certifications visées.</p>
+                        <h4>Exploitation</h4>
+                        <p>
+                            La documentation des comptes, groupes, partages et permissions facilite la reprise et limite
+                            les erreurs lors des modifications ultérieures.
+                        </p>
                     </div>
                 </div>
             </div>

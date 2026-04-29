@@ -12,21 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="description" content="Projets et compétences techniques de Louis Morice : administration système, cybersécurité, Docker, Kubernetes et développement. Alternant IT à la SEMMARIS, étudiant BTS SIO SISR à l'EFREI.">
-    <meta name="keywords" content="Louis Morice, projets informatiques, BTS SIO SISR, cybersécurité, Docker, Kubernetes, administration système, Linux, Python, SEMMARIS, EFREI">
+    <meta name="description" content="Travaux techniques de Louis Morice : systèmes serveur, infrastructure virtualisée, supervision, automatisation, sécurité d'accès, Python, Bash, Proxmox, Nginx, Prometheus et Grafana.">
+    <meta name="keywords" content="Louis Morice, systèmes serveur, infrastructure, Proxmox, Nginx, Prometheus, Grafana, Python, Bash, cybersécurité, administration système, Linux, BTS SIO SISR">
     <meta name="author" content="Louis Morice">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://louismorice.fr/projets_competences.html">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://louismorice.fr/projets_competences.html">
     <meta property="og:title" content="Projets et Compétences | Louis Morice">
-    <meta property="og:description" content="Projets et compétences techniques de Louis Morice : administration système, cybersécurité, Docker, Kubernetes et développement. Alternant IT à la SEMMARIS.">
+    <meta property="og:description" content="Travaux techniques de Louis Morice : systèmes serveur, infrastructure virtualisée, supervision, automatisation, sécurité d'accès et services backend.">
     <meta property="og:image" content="https://louismorice.fr/assets/img/og-image.jpg">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Louis Morice | Portfolio">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Projets et Compétences | Louis Morice">
-    <meta name="twitter:description" content="Projets et compétences techniques de Louis Morice : administration système, cybersécurité, Docker, Kubernetes et développement.">
+    <meta name="twitter:description" content="Travaux techniques : systèmes serveur, infrastructure virtualisée, supervision, automatisation, sécurité d'accès et services backend.">
     <meta name="twitter:image" content="https://louismorice.fr/assets/img/og-image.jpg">
 </head>
 
@@ -49,161 +49,313 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Présentation</span>
-            <h2>Mon portfolio de projets</h2>
+            <h2>Travaux techniques et compétences</h2>
             <p>
-                Découvrez les différents projets professionnels et personnels que j'ai réalisés
-                au cours de ma formation et de mes expériences dans le domaine de l'informatique.
-                Chaque projet illustre mes compétences et mon approche technique.
+                Cette page présente des travaux réalisés sur des systèmes évolutifs : environnements serveur,
+                virtualisation, supervision, automatisation, sécurité d'accès et services backend. L'accent est
+                mis sur les choix techniques, les contraintes d'exploitation et les compétences réellement mobilisées.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Section Projets -->
+<!-- Section Projets réels -->
 <section class="featured-projects" style="padding-top: 40px; padding-bottom: 60px;">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Réalisations</span>
-            <h2>Projets réalisés</h2>
+            <span class="section-tag">Systèmes réels</span>
+            <h2>Environnements exploités et maintenus</h2>
         </div>
 
         <div class="row">
             <div class="col-md-6 project-card mb-4">
                 <div class="project-content">
-                    <h3>Déploiement de serveur</h3>
-                    <p>Mise en place d'une architecture réseau pour une petite entreprise comprenant un serveur de fichiers, un serveur DNS et une gestion des utilisateurs via Active Directory.</p>
+                    <h3>Environnements serveur multijoueurs</h3>
+                    <p>
+                        Conception, déploiement et maintenance d'environnements serveur personnalisés avec clients
+                        contrôlés, runtimes modifiés et logique d'accès spécifique. Le travail couvre la gestion des
+                        sessions, l'authentification, les contrôles d'intégrité côté client et la limitation des accès
+                        aux configurations autorisées.
+                    </p>
                     <div class="tags">
-                        <span>Windows Server</span>
-                        <span>Active Directory</span>
-                        <span>DNS</span>
+                        <span>Linux</span>
+                        <span>Runtime modifié</span>
+                        <span>Contrôle d'accès</span>
+                        <span>Sessions</span>
                     </div>
-                    <a href="projets1-details.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                    <a href="projets2-details.html" class="project-link">Détail technique <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="col-md-6 project-card mb-4">
                 <div class="project-content">
-                    <h3>Maintenance de serveurs et Python</h3>
-                    <p>Gestion de serveurs de jeux auto-hébergés et développement de projets Python variés, incluant un bot Discord et des outils d'automatisation.</p>
+                    <h3>Services backend et automatisation</h3>
+                    <p>
+                        Développement de scripts Python et Bash pour automatiser des tâches récurrentes, traiter des
+                        données, orchestrer des opérations serveur et réduire les interventions manuelles. Mise en
+                        place de bots Discord avancés avec recherche, logique modulaire, commandes extensibles et
+                        traitement robuste des erreurs.
+                    </p>
                     <div class="tags">
                         <span>Python</span>
-                        <span>Linux</span>
-                        <span>Automatisation</span>
+                        <span>Bash</span>
+                        <span>API</span>
+                        <span>Discord bots</span>
                     </div>
-                    <a href="projets2-details.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                    <a href="projets2-details.html" class="project-link">Détail technique <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="col-md-6 project-card mb-4">
                 <div class="project-content">
-                    <h3>Virtualisation</h3>
-                    <p>Configuration d'une infrastructure virtualisée à l'aide de VMware Workstation, incluant plusieurs machines virtuelles interconnectées pour tester divers scénarios réseau.</p>
+                    <h3>Infrastructure virtualisée et services internes</h3>
+                    <p>
+                        Administration d'une infrastructure virtualisée avec séparation des rôles entre applications,
+                        bases de données, supervision et services internes. Utilisation de machines virtuelles et de
+                        conteneurs pour isoler les charges, simplifier les déploiements et limiter l'impact des
+                        incidents entre services.
+                    </p>
                     <div class="tags">
-                        <span>VMware</span>
-                        <span>Virtualisation</span>
-                        <span>Réseau</span>
+                        <span>Proxmox</span>
+                        <span>VM</span>
+                        <span>Conteneurs</span>
+                        <span>Services internes</span>
                     </div>
-                    <a href="projets3-details.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                    <a href="projets3-details.html" class="project-link">Détail technique <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="col-md-6 project-card mb-4">
                 <div class="project-content">
-                    <h3>Sécurisation réseau</h3>
-                    <p>Implémentation de politiques de sécurité sur un réseau d'entreprise, avec des pare-feux, des VLAN et la gestion des règles d'accès.</p>
+                    <h3>Exposition réseau et sécurisation des accès</h3>
+                    <p>
+                        Configuration de reverse proxy, règles d'exposition et segmentation logique pour publier des
+                        services tout en réduisant la surface d'attaque. Mise en place de pratiques de gestion des
+                        secrets, d'environnements configurables et de contrôles d'accès adaptés aux usages réels.
+                    </p>
                     <div class="tags">
-                        <span>Sécurité</span>
-                        <span>VLAN</span>
-                        <span>Pare-feu</span>
+                        <span>Nginx</span>
+                        <span>Reverse proxy</span>
+                        <span>Secrets</span>
+                        <span>Accès restreints</span>
                     </div>
-                    <a href="projets4-details.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                    <a href="projets4-details.html" class="project-link">Détail technique <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Section Compétences -->
+<!-- Infrastructure et architecture -->
 <section class="skills">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Expertise</span>
-            <h2>Compétences techniques</h2>
+            <span class="section-tag">Architecture</span>
+            <h2>Infrastructure et exploitation</h2>
         </div>
         <div class="skills-grid">
             <div class="skill-item">
                 <i class="fas fa-server"></i>
-                <h3>Administration système</h3>
-                <p>Installation et configuration de serveurs Windows et Linux, gestion des services et maintenance.</p>
+                <h3>Virtualisation et isolation</h3>
+                <p>
+                    Utilisation de Proxmox pour structurer des environnements composés de VM et de conteneurs, avec
+                    séparation entre applicatif, données, supervision et services d'administration.
+                </p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-network-wired"></i>
-                <h3>Réseaux</h3>
-                <p>Configuration de réseaux d'entreprise, VLAN, routage, DNS, DHCP et services réseau.</p>
+                <h3>Réseau et exposition</h3>
+                <p>
+                    Gestion de DNS, routage, ports exposés, reverse proxy Nginx et règles d'accès afin de publier les
+                    services nécessaires sans exposer inutilement les composants internes.
+                </p>
             </div>
             <div class="skill-item">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Cybersécurité</h3>
-                <p>Sécurisation des systèmes, pare-feu, chiffrement et protection des données sensibles.</p>
+                <i class="fas fa-database"></i>
+                <h3>Services et données</h3>
+                <p>
+                    Organisation de services avec dépendances explicites, configuration par variables d'environnement,
+                    gestion de volumes persistants et séparation entre données applicatives et composants d'exécution.
+                </p>
             </div>
             <div class="skill-item">
-                <i class="fas fa-code"></i>
-                <h3>Développement</h3>
-                <p>HTML, CSS, JavaScript, SQL, Python et Java pour le développement d'applications et l'automatisation.</p>
+                <i class="fas fa-code-branch"></i>
+                <h3>Déploiement</h3>
+                <p>
+                    Mise en place de workflows GitLab CI/CD, conteneurisation et étapes de build/deploy contrôlées pour
+                    rendre les changements plus reproductibles et limiter les déploiements manuels.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Compétences humaines -->
+<!-- Observabilité -->
 <section style="padding-top: 60px; padding-bottom: 60px;">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Savoir-être</span>
-            <h2>Compétences humaines</h2>
+            <span class="section-tag">Observabilité</span>
+            <h2>Suivi, analyse et incidents</h2>
         </div>
         <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-chart-line fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0 h4">Métriques</h3>
+                        </div>
+                        <p>
+                            Collecte de métriques système et applicatives avec Prometheus pour suivre CPU, mémoire,
+                            latence, disponibilité et comportement des services sous charge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-tachometer-alt fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0 h4">Dashboards</h3>
+                        </div>
+                        <p>
+                            Création de tableaux de bord Grafana pour rendre visibles les tendances, repérer les
+                            saturations et comparer l'état des composants après modification.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-search fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0 h4">Analyse</h3>
+                        </div>
+                        <p>
+                            Investigation de ralentissements et d'incidents à partir des symptômes observés :
+                            consommation de ressources, latence réseau, saturation disque et erreurs de service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Développement et sécurité -->
+<section class="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Développement</span>
+            <h2>Outillage, sécurité et automatisation</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fas fa-terminal"></i>
+                <h3>Automatisation opérationnelle</h3>
+                <p>
+                    Scripts Python et Bash pour exécuter des actions répétables, traiter des fichiers, interroger des
+                    API, vérifier des états de service et enchaîner des opérations sans intervention manuelle.
+                </p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <h3>Backend et intégrations</h3>
+                <p>
+                    Développement de logique backend pour sessions, authentification, recherche, commandes asynchrones
+                    et interactions avec services externes, avec attention portée aux erreurs et aux cas limites.
+                </p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Sécurité applicative</h3>
+                <p>
+                    Mise en place de contrôles d'accès, gestion de secrets, séparation des environnements, restrictions
+                    côté client et vérifications d'intégrité lorsque le contexte d'exécution doit être maîtrisé.
+                </p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <h3>Maintenance évolutive</h3>
+                <p>
+                    Adaptation de systèmes existants, correction de régressions, amélioration de scripts et ajustement
+                    des configurations en fonction des performances et des contraintes d'exploitation observées.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projets académiques -->
+<section style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Formation</span>
+            <h2>Projets académiques</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-server fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0 h4">Services Windows et annuaire</h3>
+                        </div>
+                        <p>
+                            Mise en place de services d'infrastructure comprenant annuaire, DNS, partage de fichiers et
+                            gestion des utilisateurs. L'objectif principal était de comprendre les dépendances entre
+                            identité, résolution de noms et droits d'accès.
+                        </p>
+                        <a href="projets1-details.html" class="project-link">Détail technique <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-project-diagram fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0 h4">Scénarios réseau virtualisés</h3>
+                        </div>
+                        <p>
+                            Construction de topologies virtualisées pour tester routage, adressage, isolement logique
+                            et règles d'accès. Ces environnements ont servi à valider des comportements réseau avant
+                            transposition dans des contextes plus proches de l'exploitation.
+                        </p>
+                        <a href="projets3-details.html" class="project-link">Détail technique <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-user-shield fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0 h4">Politiques de sécurité réseau</h3>
+                        </div>
+                        <p>
+                            Définition de règles de filtrage, segmentation et restrictions d'accès sur des services
+                            exposés. Le travail portait sur la cohérence entre besoin fonctionnel, niveau d'exposition
+                            et capacité à diagnostiquer les refus légitimes ou anormaux.
+                        </p>
+                        <a href="projets4-details.html" class="project-link">Détail technique <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-6 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fas fa-tasks fa-2x text-primary me-3"></i>
-                            <h4 class="mb-0">Gestion de projet</h4>
+                            <h3 class="mb-0 h4">Méthode d'analyse</h3>
                         </div>
-                        <p>Planification et suivi des étapes clés, définition des objectifs et gestion des priorités.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-lightbulb fa-2x text-primary me-3"></i>
-                            <h4 class="mb-0">Résolution de problèmes</h4>
-                        </div>
-                        <p>Analyse méthodique des problèmes complexes et élaboration de solutions adaptées et efficaces.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-comments fa-2x text-primary me-3"></i>
-                            <h4 class="mb-0">Communication</h4>
-                        </div>
-                        <p>Capacité à présenter clairement des solutions techniques à différents publics et à adapter mon discours.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-users fa-2x text-primary me-3"></i>
-                            <h4 class="mb-0">Travail en équipe</h4>
-                        </div>
-                        <p>Collaboration efficace avec divers acteurs, partage des connaissances et atteinte des objectifs communs.</p>
+                        <p>
+                            Formalisation des besoins, inventaire des contraintes, documentation des configurations et
+                            vérification du résultat attendu. Cette méthode est réutilisée sur les travaux techniques
+                            personnels et professionnels.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -216,7 +368,7 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Qualifications</span>
-            <h2>Certifications et formations</h2>
+            <h2>Formation</h2>
         </div>
         <div class="row">
             <div class="col-md-4 mb-4">
@@ -228,26 +380,6 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow-sm h-100 bg-white">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-award fa-3x text-primary mb-3"></i>
-                        <h4>Formation Linux</h4>
-                        <p class="mb-0">Administration système, 2023</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow-sm h-100 bg-white">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
-                        <h4>Initiation Cybersécurité</h4>
-                        <p class="mb-0">MOOC ANSSI, 2022</p>
-                    </div>
-                </div>
-            </div>
-            -->
         </div>
     </div>
 </section>

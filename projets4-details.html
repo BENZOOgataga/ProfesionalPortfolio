@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet: Sécurisation Réseau | Louis Morice</title>
+    <title>Sécurisation des accès réseau | Louis Morice</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -22,8 +22,8 @@
 <section style="padding-top: 120px; padding-bottom: 60px; background-color: var(--gray);">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Projet Académique</span>
-            <h2>Sécurisation Réseau</h2>
+            <span class="section-tag">Sécurité</span>
+            <h2>Sécurisation des accès réseau</h2>
         </div>
     </div>
 </section>
@@ -38,12 +38,12 @@
             <div class="col-lg-6">
                 <div class="section-header">
                     <span class="section-tag">Vue d'ensemble</span>
-                    <h2>Protection des infrastructures réseau</h2>
+                    <h2>Exposition contrôlée et segmentation</h2>
                 </div>
                 <p>
-                    Ce projet porte sur le renforcement de la sécurité d'un réseau informatique en implémentant
-                    des politiques adaptées pour limiter les accès non autorisés et sécuriser les échanges de données.
-                    L'objectif principal est de protéger les informations sensibles et de se prémunir contre les cyberattaques.
+                    Mise en place de règles d'accès, segmentation logique et contrôles d'exposition pour limiter la
+                    surface accessible depuis l'extérieur ou entre zones internes. L'approche consiste à n'autoriser
+                    que les flux nécessaires, documenter les décisions et vérifier les refus comme les accès attendus.
                 </p>
                 <div class="tags">
                     <span>VLAN</span>
@@ -62,50 +62,50 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Détails</span>
-            <h2>Description du projet</h2>
+            <h2>Description technique</h2>
         </div>
 
         <div class="card border-0 shadow-sm mb-5">
             <div class="card-body p-4">
                 <h3 class="mb-4">Contexte et objectifs</h3>
                 <p>
-                    Dans un environnement où les cyberattaques sont de plus en plus sophistiquées, la sécurisation des réseaux
-                    informatiques est devenue une priorité absolue. Ce projet vise à implémenter une architecture réseau sécurisée
-                    qui protège les informations sensibles tout en maintenant la fonctionnalité et l'accessibilité nécessaires.
+                    Les services exposés nécessitent un équilibre entre accessibilité, maintenabilité et réduction des
+                    risques. Le travail porte sur les règles de filtrage, l'organisation des zones, la sécurisation des
+                    accès administratifs et la capacité à diagnostiquer rapidement un blocage légitime ou une anomalie.
                 </p>
                 <p>
-                    Les principaux objectifs étaient :
+                    Les objectifs techniques sont :
                 </p>
                 <ul>
-                    <li>Segmenter le réseau en zones distinctes avec différents niveaux de sécurité</li>
-                    <li>Contrôler et filtrer le trafic entre les différentes zones du réseau</li>
-                    <li>Sécuriser les communications en implémentant des protocoles de chiffrement</li>
-                    <li>Mettre en place un système de monitoring pour détecter les activités suspectes</li>
-                    <li>Documenter les meilleures pratiques pour la maintenance continue du réseau sécurisé</li>
+                    <li>Segmenter les services selon leur rôle et leur niveau d'exposition</li>
+                    <li>Filtrer les flux entrants, sortants et inter-zones selon le besoin réel</li>
+                    <li>Sécuriser l'administration distante avec des protocoles chiffrés et accès restreints</li>
+                    <li>Observer les erreurs, refus et comportements inhabituels</li>
+                    <li>Documenter les règles pour éviter les ouvertures implicites ou non justifiées</li>
                 </ul>
             </div>
         </div>
 
         <div class="card border-0 shadow-sm mb-5">
             <div class="card-body p-4">
-                <h3 class="mb-4">Technologies utilisées</h3>
+                <h3 class="mb-4">Technologies utilisées en contexte</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <h4 class="mb-3">Infrastructure réseau</h4>
                         <ul>
-                            <li>Cisco IOS pour la configuration des commutateurs</li>
-                            <li>VLANs pour la segmentation du réseau</li>
-                            <li>ACLs (Access Control Lists) pour le filtrage du trafic</li>
-                            <li>VPN pour les accès distants sécurisés</li>
+                            <li>VLAN ou segments logiques pour isoler les usages</li>
+                            <li>Règles de filtrage pour limiter les communications non nécessaires</li>
+                            <li>Reverse proxy Nginx pour centraliser l'exposition de services web</li>
+                            <li>DNS et ports explicitement gérés selon le service publié</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h4 class="mb-3">Sécurité et monitoring</h4>
+                        <h4 class="mb-3">Sécurité et supervision</h4>
                         <ul>
-                            <li>Pare-feu Pfsense pour le contrôle du trafic</li>
-                            <li>Protocoles HTTPS et SSH pour les communications chiffrées</li>
-                            <li>Wireshark pour l'analyse du trafic réseau</li>
-                            <li>Nagios pour la surveillance et les alertes</li>
+                            <li>HTTPS et SSH pour les flux sensibles ou administratifs</li>
+                            <li>Gestion des secrets et séparation des environnements</li>
+                            <li>Analyse de trafic et journaux pour vérifier les comportements réseau</li>
+                            <li>Métriques et tableaux de bord pour suivre disponibilité et anomalies</li>
                         </ul>
                     </div>
                 </div>
@@ -114,37 +114,37 @@
 
         <div class="card border-0 shadow-sm">
             <div class="card-body p-4">
-                <h3 class="mb-4">Principales fonctionnalités</h3>
+                <h3 class="mb-4">Mesures mises en place</h3>
 
                 <div class="mb-4">
-                    <h4>1. Segmentation du réseau</h4>
+                    <h4>1. Segmentation</h4>
                     <p>
-                        Implémentation de VLANs pour isoler les différents départements et services, limitant ainsi
-                        la propagation des menaces en cas de compromission d'un segment.
+                        Séparation des services selon leur usage : administration, application, base de données,
+                        supervision et exposition publique lorsque nécessaire.
                     </p>
                 </div>
 
                 <div class="mb-4">
                     <h4>2. Contrôle d'accès</h4>
                     <p>
-                        Mise en place de règles de filtrage strictes sur les pare-feux pour contrôler le trafic entrant
-                        et sortant, avec une approche de "moindre privilège" où seul le trafic explicitement autorisé est permis.
+                        Règles explicites pour les flux autorisés, fermeture des ports inutiles, accès administratifs
+                        restreints et séparation des comptes ou secrets selon les environnements.
                     </p>
                 </div>
 
                 <div class="mb-4">
-                    <h4>3. Communications sécurisées</h4>
+                    <h4>3. Exposition via reverse proxy</h4>
                     <p>
-                        Configuration des protocoles HTTPS pour les applications web et SSH pour l'administration à distance,
-                        assurant ainsi le chiffrement des données en transit.
+                        Centralisation de certains accès web derrière Nginx afin de maîtriser les hôtes publiés, les
+                        certificats, les redirections et les règles d'accès associées.
                     </p>
                 </div>
 
                 <div>
-                    <h4>4. Système de monitoring</h4>
+                    <h4>4. Vérification et diagnostic</h4>
                     <p>
-                        Déploiement de Nagios pour surveiller en temps réel l'état du réseau, avec des alertes configurées
-                        pour notifier les administrateurs en cas d'activité suspecte ou d'anomalie.
+                        Validation des règles par tests d'accès, lecture de journaux et analyse des symptômes en cas de
+                        refus inattendu, latence ou service inaccessible.
                     </p>
                 </div>
             </div>
@@ -156,29 +156,29 @@
 <section class="skills">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Acquis</span>
-            <h2>Compétences développées</h2>
+            <span class="section-tag">Compétences</span>
+            <h2>Compétences mobilisées</h2>
         </div>
         <div class="skills-grid">
             <div class="skill-item">
                 <i class="fas fa-network-wired"></i>
-                <h3>Configuration réseau avancée</h3>
-                <p>Mise en place de VLANs, ACLs et routage inter-VLAN.</p>
+                <h3>Segmentation réseau</h3>
+                <p>Organisation des flux par zones, services et niveaux d'exposition.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-shield-alt"></i>
-                <h3>Sécurité informatique</h3>
-                <p>Implémentation de politiques de sécurité et configuration de pare-feux.</p>
+                <h3>Filtrage et moindre privilège</h3>
+                <p>Autorisation explicite des flux utiles et suppression des ouvertures non justifiées.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-chart-line"></i>
-                <h3>Monitoring et analyse</h3>
-                <p>Utilisation d'outils de surveillance réseau et analyse de trafic.</p>
+                <h3>Observabilité réseau</h3>
+                <p>Analyse de trafic, journaux et métriques pour comprendre les refus et anomalies.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-file-alt"></i>
                 <h3>Documentation technique</h3>
-                <p>Rédaction de documentations détaillées et procédures de sécurité.</p>
+                <p>Traçabilité des règles, flux autorisés, ports exposés et comptes d'administration.</p>
             </div>
         </div>
     </div>
@@ -189,28 +189,28 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Bilan</span>
-            <h2>Résultats et conclusion</h2>
+            <h2>Résultats et limites</h2>
         </div>
         <div class="card border-0 shadow-sm">
             <div class="card-body p-4">
                 <p>
-                    Après l'implémentation des mesures de sécurité, le réseau présente une architecture robuste avec plusieurs
-                    couches de protection qui travaillent ensemble pour créer un environnement sécurisé.
+                    Les mesures mises en place rendent l'exposition des services plus lisible et plus contrôlable. La
+                    sécurité repose sur plusieurs couches : segmentation, filtrage, chiffrement des accès sensibles,
+                    gestion des secrets et observation des comportements.
                 </p>
                 <p>
-                    Les principaux résultats obtenus sont :
+                    Les résultats observables sont :
                 </p>
                 <ul>
-                    <li>Isolation efficace des services critiques dans des VLANs dédiés</li>
-                    <li>Réduction significative des vulnérabilités potentielles grâce aux règles de pare-feu</li>
-                    <li>Sécurisation des communications administratives et des données sensibles</li>
-                    <li>Système de détection précoce d'incidents grâce au monitoring en temps réel</li>
+                    <li>Meilleure séparation entre services exposés, services internes et administration</li>
+                    <li>Réduction des ports et flux accessibles sans justification fonctionnelle</li>
+                    <li>Diagnostic plus simple grâce à des règles documentées et vérifiables</li>
+                    <li>Prise en compte des secrets, certificats et variables d'environnement dans la configuration</li>
                 </ul>
                 <p>
-                    Ce projet a permis de mettre en pratique des connaissances théoriques en sécurité réseau et
-                    d'acquérir une expérience concrète dans l'implémentation de solutions de protection. Les compétences
-                    développées sont directement applicables dans un environnement professionnel et constituent une base
-                    solide pour la spécialisation en cybersécurité.
+                    Les limites principales concernent la nécessité de maintenir les règles dans le temps : un service
+                    ajouté, déplacé ou modifié peut invalider une hypothèse réseau. La documentation et les tests
+                    réguliers restent donc indispensables.
                 </p>
             </div>
         </div>

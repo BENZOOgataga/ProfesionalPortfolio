@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet: Serveurs de Jeux & Python | Louis Morice</title>
+    <title>Environnements serveur et automatisation | Louis Morice</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -22,8 +22,8 @@
 <section style="padding-top: 120px; padding-bottom: 60px; background-color: var(--gray);">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Projet Personnel</span>
-            <h2>Serveurs de Jeux & Python</h2>
+            <span class="section-tag">Système exploité</span>
+            <h2>Environnements serveur et automatisation</h2>
         </div>
     </div>
 </section>
@@ -38,19 +38,21 @@
             <div class="col-lg-6">
                 <div class="section-header">
                     <span class="section-tag">Vue d'ensemble</span>
-                    <h2>Gestion de serveurs de jeux</h2>
+                    <h2>Serveurs multijoueurs et services backend</h2>
                 </div>
                 <p>
-                    Ce projet personnel consiste en la gestion et la maintenance d'une infrastructure de serveurs de jeux,
-                    ainsi que le développement d'outils en Python pour automatiser les tâches d'administration
-                    et la surveillance système.
+                    Exploitation d'environnements serveur personnalisés avec clients contrôlés, runtimes modifiés,
+                    logique d'accès spécifique et outils d'administration. Le travail couvre la maintenance système,
+                    l'automatisation, la supervision, les sauvegardes et le développement de services backend utiles
+                    à l'exploitation quotidienne.
                 </p>
                 <div class="tags">
                     <span>Python</span>
                     <span>Linux</span>
-                    <span>Automatisation</span>
+                    <span>Bash</span>
                     <span>APIs</span>
-                    <span>Monitoring</span>
+                    <span>Prometheus</span>
+                    <span>Grafana</span>
                 </div>
             </div>
         </div>
@@ -62,50 +64,51 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Détails</span>
-            <h2>Description du projet</h2>
+            <h2>Description technique</h2>
         </div>
 
         <div class="card border-0 shadow-sm mb-5">
             <div class="card-body p-4">
-                <h3 class="mb-4">Contexte et objectifs</h3>
+                <h3 class="mb-4">Contexte et contraintes</h3>
                 <p>
-                    En tant que passionné de jeux vidéo et d'informatique, j'ai développé et maintenu une infrastructure de serveurs
-                    pour différents jeux. Face aux défis de gestion manuelle, j'ai décidé de créer des scripts Python pour automatiser
-                    les tâches répétitives et améliorer la qualité de service.
+                    Les environnements exploités ne se limitent pas à l'installation d'un serveur standard. Ils
+                    impliquent des clients adaptés, des mod loaders ou forks, des paramètres d'exécution maîtrisés et
+                    des règles d'accès propres à chaque usage. Les changements doivent être testés avant déploiement
+                    pour éviter les incompatibilités entre client, serveur et configuration runtime.
                 </p>
                 <p>
-                    Les principaux objectifs étaient :
+                    Les objectifs techniques sont :
                 </p>
                 <ul>
-                    <li>Automatiser le déploiement et la maintenance des serveurs</li>
-                    <li>Surveiller les performances et la disponibilité en temps réel</li>
-                    <li>Mettre en place des sauvegardes automatiques</li>
-                    <li>Développer une API pour la gestion à distance</li>
-                    <li>Créer des outils d'analyse des journaux système</li>
+                    <li>Réduire les interventions manuelles sur les opérations répétitives</li>
+                    <li>Contrôler les versions, configurations et dépendances côté client et serveur</li>
+                    <li>Suivre les ressources, la latence et les erreurs pour diagnostiquer les incidents</li>
+                    <li>Maintenir des sauvegardes exploitables et vérifiables</li>
+                    <li>Développer des outils internes pour la recherche, l'administration et les accès</li>
                 </ul>
             </div>
         </div>
 
         <div class="card border-0 shadow-sm mb-5">
             <div class="card-body p-4">
-                <h3 class="mb-4">Technologies utilisées</h3>
+                <h3 class="mb-4">Technologies utilisées en contexte</h3>
                 <div class="row">
                     <div class="col-md-6">
-                        <h4 class="mb-3">Langages et frameworks</h4>
+                        <h4 class="mb-3">Développement et automatisation</h4>
                         <ul>
-                            <li>Python 3.9</li>
-                            <li>Flask pour l'API REST</li>
-                            <li>Bash pour les scripts système</li>
-                            <li>SQLite pour le stockage local</li>
+                            <li>Python pour les scripts d'administration, les bots et la logique backend</li>
+                            <li>Bash pour les opérations système simples et reproductibles</li>
+                            <li>APIs internes pour exposer certaines actions sans accès direct au serveur</li>
+                            <li>Stockage local ou base dédiée selon le volume et le besoin de requêtage</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h4 class="mb-3">Outils et environnement</h4>
+                        <h4 class="mb-3">Exploitation</h4>
                         <ul>
-                            <li>Linux (Ubuntu Server)</li>
-                            <li>Docker pour la conteneurisation</li>
-                            <li>Prometheus et Grafana pour le monitoring</li>
-                            <li>Git pour le versioning</li>
+                            <li>Linux pour l'hébergement des services et la gestion des processus</li>
+                            <li>Conteneurs lorsque l'isolation et la reproductibilité sont utiles</li>
+                            <li>Prometheus et Grafana pour les métriques et tableaux de bord</li>
+                            <li>Git pour suivre les changements de scripts et configurations</li>
                         </ul>
                     </div>
                 </div>
@@ -114,13 +117,14 @@
 
         <div class="card border-0 shadow-sm">
             <div class="card-body p-4">
-                <h3 class="mb-4">Principales fonctionnalités</h3>
+                <h3 class="mb-4">Fonctions mises en place</h3>
 
                 <div class="mb-4">
-                    <h4>1. Système d'automatisation</h4>
+                    <h4>1. Automatisation d'exploitation</h4>
                     <p>
-                        Ensemble de scripts Python permettant de démarrer, arrêter, mettre à jour et sauvegarder les serveurs
-                        selon un calendrier prédéfini ou en réponse à des événements spécifiques.
+                        Scripts permettant de démarrer, arrêter, sauvegarder, vérifier et mettre à jour des services
+                        avec journalisation des erreurs. Les actions critiques sont séparées des commandes courantes
+                        afin de limiter les erreurs d'exécution.
                     </p>
                     <div class="code-container">
                         <div class="code-header">
@@ -144,8 +148,8 @@
         logging.error(<span class="string">f"Backup failed: {e}"</span>)
 
 <span class="comment"># Planification des sauvegardes</span>
-schedule.every().day.at(<span class="string">"03:00"</span>).do(backup_server, <span class="string">"minecraft-1"</span>)
-schedule.every().day.at(<span class="string">"04:00"</span>).do(backup_server, <span class="string">"factorio-1"</span>)
+schedule.every().day.at(<span class="string">"03:00"</span>).do(backup_server, <span class="string">"server-a"</span>)
+schedule.every().day.at(<span class="string">"04:00"</span>).do(backup_server, <span class="string">"server-b"</span>)
 
 <span class="keyword">while</span> <span class="keyword">True</span>:
     schedule.run_pending()
@@ -154,26 +158,28 @@ schedule.every().day.at(<span class="string">"04:00"</span>).do(backup_server, <
                 </div>
 
                 <div class="mb-4">
-                    <h4>2. API de gestion</h4>
+                    <h4>2. Contrôle d'accès et vérifications</h4>
                     <p>
-                        API REST développée avec Flask permettant de contrôler les serveurs à distance, de consulter les statistiques
-                        et de gérer les utilisateurs.
+                        Mise en place de flux d'accès restreints, contrôles d'intégrité et vérifications de
+                        configuration pour éviter l'utilisation de clients ou paramètres non conformes.
                     </p>
                 </div>
 
                 <div class="mb-4">
-                    <h4>3. Système de monitoring</h4>
+                    <h4>3. Supervision</h4>
                     <p>
-                        Implémentation de Prometheus pour collecter les métriques système et Grafana pour les visualiser.
-                        Des alertes sont configurées pour notifier en cas de problèmes.
+                        Collecte de métriques système et applicatives avec visualisation Grafana. Les tableaux de bord
+                        servent à repérer les saturations, comparer l'état avant/après modification et accélérer le
+                        diagnostic lors d'un ralentissement.
                     </p>
                 </div>
 
                 <div>
-                    <h4>4. Analyse de journaux</h4>
+                    <h4>4. Analyse de journaux et outils internes</h4>
                     <p>
-                        Scripts Python permettant d'analyser les fichiers logs des serveurs pour détecter les erreurs,
-                        suivre l'activité des joueurs et générer des rapports périodiques.
+                        Analyse de logs pour identifier erreurs récurrentes, comportements anormaux et causes probables
+                        d'incidents. Développement de bots Discord avancés avec commandes extensibles, recherche et
+                        logique modulaire.
                     </p>
                 </div>
             </div>
@@ -185,29 +191,29 @@ schedule.every().day.at(<span class="string">"04:00"</span>).do(backup_server, <
 <section class="skills">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Acquis</span>
-            <h2>Compétences développées</h2>
+            <span class="section-tag">Compétences</span>
+            <h2>Compétences mobilisées</h2>
         </div>
         <div class="skills-grid">
             <div class="skill-item">
                 <i class="fas fa-code"></i>
-                <h3>Programmation Python</h3>
-                <p>Maîtrise de Python pour des scripts d'automatisation et le développement d'API.</p>
+                <h3>Python opérationnel</h3>
+                <p>Scripts, bots, intégrations API, traitement d'erreurs et logique backend orientée usage réel.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-server"></i>
                 <h3>Administration Linux</h3>
-                <p>Configuration et maintenance de serveurs Linux, gestion des services système.</p>
+                <p>Gestion de services, processus, droits, fichiers de configuration, logs et ressources système.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-chart-line"></i>
-                <h3>Monitoring système</h3>
-                <p>Mise en place de solutions de surveillance avec Prometheus et Grafana.</p>
+                <h3>Observabilité</h3>
+                <p>Suivi de métriques, analyse de latence, saturation CPU/mémoire/disque et investigation d'incidents.</p>
             </div>
             <div class="skill-item">
                 <i class="fas fa-network-wired"></i>
-                <h3>Réseau</h3>
-                <p>Configuration réseau, gestion de ports, sécurisation des accès.</p>
+                <h3>Sécurité d'accès</h3>
+                <p>Exposition contrôlée, restrictions client, secrets, authentification et limitation des accès directs.</p>
             </div>
         </div>
     </div>
@@ -218,27 +224,27 @@ schedule.every().day.at(<span class="string">"04:00"</span>).do(backup_server, <
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Bilan</span>
-            <h2>Résultats et conclusion</h2>
+            <h2>Résultats et enseignements</h2>
         </div>
         <div class="card border-0 shadow-sm">
             <div class="card-body p-4">
                 <p>
-                    Ce projet personnel m'a permis de développer des compétences pratiques en administration système Linux et en
-                    programmation Python, tout en résolvant des problèmes concrets de gestion de serveurs.
+                    Ces environnements ont permis de travailler sur des contraintes proches de l'exploitation :
+                    compatibilité entre versions, performances variables selon la charge, fiabilité des sauvegardes,
+                    gestion des accès et diagnostic à partir de métriques ou journaux.
                 </p>
                 <p>
-                    Les principaux résultats obtenus sont :
+                    Les résultats observables sont :
                 </p>
                 <ul>
-                    <li>Réduction de 75% du temps consacré aux tâches de maintenance grâce à l'automatisation</li>
-                    <li>Amélioration de la disponibilité des serveurs (uptime de 99.5%)</li>
-                    <li>Système de sauvegarde fiable avec vérification d'intégrité</li>
-                    <li>Interface de gestion centralisée accessible à distance</li>
+                    <li>Opérations courantes rendues reproductibles par scripts</li>
+                    <li>Meilleure visibilité sur les ralentissements grâce aux métriques et logs</li>
+                    <li>Séparation plus claire entre services, données, accès et configuration</li>
+                    <li>Réduction des accès directs par l'utilisation d'outils et flux contrôlés</li>
                 </ul>
                 <p>
-                    Les difficultés rencontrées, notamment les problèmes de performance et les conflits entre services,
-                    m'ont permis d'améliorer mes compétences en dépannage et optimisation système. Ce projet continue d'évoluer
-                    avec l'intégration de nouvelles fonctionnalités et l'adoption de meilleures pratiques.
+                    Les difficultés principales concernent la gestion des incompatibilités, les performances sous charge
+                    et la capacité à distinguer rapidement un problème réseau, système, applicatif ou de configuration.
                 </p>
             </div>
         </div>
